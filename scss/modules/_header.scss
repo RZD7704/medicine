@@ -1,5 +1,16 @@
 .header {
-    margin-top: 10px;
+    // margin-top: 10px;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    z-index: 999;
+    background: #FFFFFF;
+    top: 0;
+
+    @media (max-width: 991px) {
+        height: 150px;
+
+    }
 
     &__right {
         display: flex;
@@ -35,6 +46,7 @@
 
         .number {
             margin-top: 5px;
+            text-align: center;
 
 
             &--a {
@@ -43,9 +55,8 @@
                 line-height: 24px;
                 color: #706A6A;
 
-                @media (max-width: 991px) {
-                    font-size: 15px;    
-                    
+                @media (max-width: 1199px) {
+                    font-size: 15px;  
                 }
             }
 
