@@ -1,0 +1,56 @@
+.info-tabs {
+    &__blocks {
+        margin-top: 100px;
+        margin-bottom: 100px;
+    }
+
+    &__cards {
+        &--a {
+            border: 1px solid #DCE6F0!important;   
+            font-size: 20px;
+            line-height: 36px;
+            color: rgba(112, 106, 106, 0.5);     
+            height: 100%;
+
+            // @media (max-width: 575px) {
+            //     font-size: 13px;
+            // }
+        }
+
+        &--a:hover {
+            color: #2EAFFF!important;
+        }
+
+        &--a.active {
+            background: #DCE6F0!important;
+            color: #2EAFFF!important;
+        }
+
+        &--btn {
+            text-align: center;
+        }
+
+        &--pane {
+            padding: 20px 10px;
+        }
+
+        &--pane.active {
+            background: #DCE6F0!important;
+
+        }
+    }
+
+    &__svg {
+
+        &--icon {
+            width: 155px;
+            height: 155px;
+        }
+    }
+}
+
+// .info-btn {
+//     width: 265px;
+//     height: 40px;
+//     display: block;
+// }
