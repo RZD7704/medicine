@@ -45,7 +45,16 @@
         &--icon {
             width: 155px;
             height: 155px;
+            fill: #DCE6F0;
         }
+
+        &--icon.active {
+            fill: #2EAFFF;
+        }
+    }
+
+    #svg-guy {
+        stroke: #2EAFFF;
     }
 }
 

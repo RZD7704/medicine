@@ -16,29 +16,13 @@
 
         &--block {
             background: #DCE6F0;
-
         }
 
         &--dots {
             bottom: -15%;
         }
 
-        // &--bg {
-        //     width: 100%;
-        //     height: 100px;
-        //     z-index: 1;
-
-        // }
-
-        &--slide {
-            // width: 100%;
-            // position: relative;
-            // margin: auto;
-            // z-index: 999;
-        }
-
         &--slide img {
-            // width: 100%;
             position: relative;
             margin: auto;
             z-index: 999;
@@ -46,8 +30,6 @@
         }
 
         &--text {
-            // position: absolute;
-            // bottom: 0;
             background: #DCE6F0;
             height: 100px;
             text-align: center;

@@ -1,0 +1,112 @@
+.footer {
+    background: #D8D8D8;
+    margin-top: 50px;
+}
+
+.footer-head {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+    box-shadow: 0px -4px 4px rgba(79, 91, 101, 0.1);
+
+
+    .button {
+        margin-top: 20px;
+        &--a {
+            text-decoration: none;
+            font-size: 20px;
+            line-height: 24px;
+            color: #FFFFFF;
+            background: linear-gradient(101.45deg, #2EAFFF 38.11%, #DCE6F0 157.54%);
+            border-radius: 33px;
+            padding: 5px 50px;
+    
+    
+        }
+    }
+}
+
+.footer-main {
+    margin-top: 15px;
+    &__text {
+
+        &--a {
+            font-size: 15px;
+            line-height: 24px;
+            color: #706A6A;
+        }
+
+        &--a:hover {
+            text-decoration: none;
+            color: #706A6A;
+
+        }
+
+
+    }
+
+    &__contact {
+        text-align: center;
+        .icons-block {
+            display: flex;
+            justify-content: center;
+        
+            &--button {
+                margin-right: 5px;            }
+        
+            &--button--div {
+                width: 35px;
+                height: 35px;
+                box-shadow: inset 0 0 0 2px rgba(112, 106, 106, 1);
+                text-align: center;
+                border-radius: 50%;
+                // padding: 20px;
+                font-size: 23px;
+                align-self: center;
+                margin: 4%;
+                transition: box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+                display: inline-block;
+            }
+        
+            .icon {
+                width: 14px;
+                height: 14px;
+            }
+        }
+        
+        .number {
+            margin-top: 5px;
+            text-align: center;
+        
+        
+            &--a {
+                text-decoration: none;
+                font-size: 20px;
+                line-height: 24px;
+                color: #706A6A;
+        
+                @media (max-width: 1199px) {
+                    font-size: 15px;  
+                }
+            }
+        
+        }
+    }
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid rgba(112, 106, 106, 0.5);
+    margin-top: 20px;
+
+    &__p {
+        padding-top: 7px;
+        padding-bottom: 7px;
+        font-size: 15px;
+        line-height: 24px;
+        color: rgba(112, 106, 106, 0.5);
+    }
+}
+
+
+

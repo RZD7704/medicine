@@ -1,0 +1,17 @@
+.registration {
+    margin-top: 130px;
+}
+
+.registration-block {
+    background: red;
+
+    &__head {
+        text-align: center;
+
+        &--h {
+            font-size: 46px;
+            line-height: 55px;
+            color: #2EAFFF;
+        }
+    }
+}

@@ -1,0 +1,33 @@
+.news-page {
+    margin-top: 160px;
+
+    &__block:nth-child(odd) .news-page__info {
+        background: #DCE6F0;
+    }
+
+    &__block:nth-child(even) .news-page__info {
+        background: #fff;
+        margin-top: 0;
+    }
+
+    &__container {
+        margin-top: 0;
+    }
+
+    &__img {
+
+        @media (min-width: 768px) {
+            max-width: 250px;
+        }
+    }
+
+    &__info  {
+        width: 100%;
+        text-align: left;
+        padding: 25px;
+    }
+
+    &__btn {
+        margin: 45px auto 0;
+    }
+}

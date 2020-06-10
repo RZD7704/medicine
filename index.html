@@ -20,12 +20,12 @@
 	<![endif]-->
 </head>
 <body>
-	<header class="header d-flex align-items-center">
+	<header id="header" class="header d-flex align-items-center">
 		<div class="container">
 			<div class="row">
 				<div class="header__left col-12 col-lg-6 text-center text-lg-left">
 					<div class="logo">
-						<a class="logo__a" href="#">
+						<a class="logo__a" href="index.html">
 							<img src="images/logo-header.png" alt="Logo">
 						</a>
 					</div>
@@ -75,7 +75,7 @@
 						<a class="number--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
 					</div>
 
-					<div class="button">
+					<div class="button btn-log" data-toggle="modal" data-target="#exampleModal">
 						<a href="#" class="button--a">Увійти</a>
 					</div>
 				</div>
@@ -83,211 +83,350 @@
 		</div>
 	</header>
 
-	<section class="info-slider">
-		<div class="sl">
-			<div class="sl__slide">
-				<div class="sl__block--img"></div>
-				<img src="images/slider/bg.png" alt="Картинка слайда №1" class="sl__img">
-				
-				<div class="sl__text">
-					<h3 class="sl__zag">Слайд 1</h3>
-					<p class="sl__desc">Описание слайда №1wehwbewjhb</p>
-				</div>
-			</div>
-			<div class="sl__slide">
-				<div class="sl__block--img"></div>
-				<img src="images/slider/bg.png" alt="Картинка слайда №2" class="sl__img">
+	<main class="main">
+		<section class="info-slider">
+			<div class="sl">
+				<div class="sl__slide">
+					<div class="sl__block--img"></div>
+					<img src="images/slider/bg.png" alt="Картинка слайда №1" class="sl__img">
+					
 					<div class="sl__text">
-					<h3 class="sl__zag">Слайд 2</h3>
-					<p class="sl__desc">Описание слайда №2</p>
+						<h3 class="sl__zag">Слайд 1</h3>
+						<p class="sl__desc">Описание слайда №1wehwbewjhb</p>
+					</div>
+				</div>
+				<div class="sl__slide">
+					<div class="sl__block--img"></div>
+					<img src="images/slider/bg.png" alt="Картинка слайда №2" class="sl__img">
+						<div class="sl__text">
+						<h3 class="sl__zag">Слайд 2</h3>
+						<p class="sl__desc">Описание слайда №2</p>
+					</div>
+				</div>
+				<div class="sl__slide">
+					<div class="sl__block--img"></div>
+					<img src="images/slider/bg.png" alt="Картинка слайда №3" class="sl__img">
+					<div class="sl__text">
+						<h3 class="sl__zag">Слайд 3</h3>
+						<p class="sl__desc">Описание слайда №3</p>
+					</div>
+				</div>
+				<div class="sl__slide">
+					<div class="sl__block--img"></div>
+					<img src="images/slider/bg.png" alt="Картинка слайда №4" class="sl__img">
+					<div class="sl__text">
+						<h3 class="sl__zag">Слайд 4</h3>
+						<p class="sl__desc">Описание слайда №4</p>
+					</div>
+				</div>
+				<div class="sl__slide">
+					<div class="sl__block--img"></div>
+					<img src="images/slider/bg.png" alt="Картинка слайда №5" class="sl__img">
+					<div class="sl__text">
+						<h3 class="sl__zag">Слайд 5</h3>
+						<p class="sl__desc">Описание слайда №5</p>
+					</div>
+				</div>
+				<div class="sl__slide">
+					<div class="sl__block--img"></div>
+					<img src="images/slider/bg.png" alt="Картинка слайда №6" class="sl__img">
+					<div class="sl__text">
+						<h3 class="sl__zag">Слайд 6</h3>
+						<p class="sl__desc">Описание слайда №6</p>
+					</div>
 				</div>
 			</div>
-			<div class="sl__slide">
-				<div class="sl__block--img"></div>
-				<img src="images/slider/bg.png" alt="Картинка слайда №3" class="sl__img">
-				<div class="sl__text">
-					<h3 class="sl__zag">Слайд 3</h3>
-					<p class="sl__desc">Описание слайда №3</p>
-				</div>
-			</div>
-			<div class="sl__slide">
-				<div class="sl__block--img"></div>
-				<img src="images/slider/bg.png" alt="Картинка слайда №4" class="sl__img">
-				<div class="sl__text">
-					<h3 class="sl__zag">Слайд 4</h3>
-					<p class="sl__desc">Описание слайда №4</p>
-				</div>
-			</div>
-			<div class="sl__slide">
-				<div class="sl__block--img"></div>
-				<img src="images/slider/bg.png" alt="Картинка слайда №5" class="sl__img">
-				<div class="sl__text">
-					<h3 class="sl__zag">Слайд 5</h3>
-					<p class="sl__desc">Описание слайда №5</p>
-				</div>
-			</div>
-			<div class="sl__slide">
-				<div class="sl__block--img"></div>
-				<img src="images/slider/bg.png" alt="Картинка слайда №6" class="sl__img">
-				<div class="sl__text">
-					<h3 class="sl__zag">Слайд 6</h3>
-					<p class="sl__desc">Описание слайда №6</p>
-				</div>
-			</div>
-		</div>
-	</section>
+		</section>
 
-	<section class="info-tabs">
-		<div class="container info-tabs__blocks">
-			<div class="row">
-				<div class="info-tabs__svg col-lg-3 d-none d-lg-block">
-					<a href="#responsive">
-						<svg class="info-tabs__svg--icon">
+		<section class="info-tabs">
+			<div class="container info-tabs__blocks">
+				<div class="row">
+					<div  class="info-tabs__svg col-lg-3 d-none d-lg-block">
+						<svg id="svg-home" class="info-tabs__svg--icon">
 							<use xlink:href="images/sprite.svg#card-clinick"></use>
 						</svg>
-					</a>
-				</div>
-				<div class="info-tabs__cards col-12 col-lg-6">
-					<ul class="nav nav-tabs" id="myTab" role="tablist">
-						<li class="nav-item info-tabs__cards--btn w-50" role="presentation">
-						<a class="nav-link active info-tabs__cards--a" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Медичним центрам</a>
-						</li>
-						<li class="nav-item info-tabs__cards--btn w-50" role="presentation">
-						<a class="nav-link info-tabs__cards--a" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Пацієнтам</a>
-						</li>
-					</ul>
-					<div class="tab-content" id="myTabContent">
-						<div class="tab-pane fade show active info-tabs__cards--pane w-100" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut id commodo sollicitudin tristique. Faucibus sed at lacus sed. Aliquam purus nunc hendrerit sit nisl. </div>
-						<div class="tab-pane fade info-tabs__cards--pane w-100" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut id commodo sollicitudin tristique. Faucibus sed at lacus sed. Aliquam purus nunc hendrerit sit nisl. </div>
 					</div>
-				</div>
-				<div class="info-tabs__svg col-lg-3 d-none d-lg-block">
-					<a href="#responsive">
-						<svg class="info-tabs__svg--icon">
+					<div class="info-tabs__cards col-12 col-lg-6">
+						<ul class="nav nav-tabs" id="myTab" role="tablist">
+							<li class="nav-item info-tabs__cards--btn w-50 info-tabs__btn" role="presentation" >
+							<a data-icon="svg-home" class="nav-link active info-tabs__cards--a" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Медичним центрам</a>
+							</li>
+							<li class="nav-item info-tabs__cards--btn w-50 info-tabs__btn" role="presentation" >
+							<a data-icon="svg-guy" class="nav-link info-tabs__cards--a" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Пацієнтам</a>
+							</li>
+						</ul>
+						<div class="tab-content" id="myTabContent">
+							<div class="tab-pane fade show active info-tabs__cards--pane w-100" id="home" role="tabpanel" aria-labelledby="home-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut id commodo sollicitudin tristique. Faucibus sed at lacus sed. Aliquam purus nunc hendrerit sit nisl. </div>
+							<div class="tab-pane fade info-tabs__cards--pane w-100" id="profile" role="tabpanel" aria-labelledby="profile-tab">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut id commodo sollicitudin tristique. Faucibus sed at lacus sed. Aliquam purus nunc hendrerit sit nisl. </div>
+						</div>
+					</div>
+					<div  class="info-tabs__svg col-lg-3 d-none d-lg-block">
+						<svg id="svg-guy" class="info-tabs__svg--icon">
 							<use xlink:href="images/sprite.svg#card-pacient"></use>
 						</svg>
-					</a>
-				</div>
-			</div>
-		</div>	
-	</section>
-
-	<section class="kind">
-		<div class="container">
-			<div class="row">
-				<div class=" col-12 col-lg-4">
-					<a class="kind--a" href="#">
-						<div class="kind__block">
-							<img class="kind__block--img" src="images/kt-png.png" alt="Logo">
-							<div class="kind__text">
-								<p class="kind__text--caption">KT</p>
-								<p class="kind__text--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut id commodo sollicitudin tristique. Faucibus sed at lacus sed. Aliquam purus nunc hendrerit sit nisl. </p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class=" col-12 col-lg-4">
-					<a class="kind--a" href="#">
-						<div class="kind__block">
-							<img class="kind__block--img" src="images/mpt-png.png" alt="Logo">
-							<div class="kind__text">
-								<p class="kind__text--caption">MPT</p>
-								<p class="kind__text--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut id commodo sollicitudin tristique. Faucibus sed at lacus sed. Aliquam purus nunc hendrerit sit nisl. </p>
-							</div>
-						</div>
-					</a>
-				</div>
-				<div class=" col-12 col-lg-4">
-					<a class="kind--a" href="#">
-						<div class="kind__block">
-							<img class="kind__block--img" src="images/fluer-png.png" alt="Logo">
-							<div class="kind__text">
-								<p class="kind__text--caption">Флюрографія</p>
-								<p class="kind__text--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut id commodo sollicitudin tristique. Faucibus sed at lacus sed. Aliquam purus nunc hendrerit sit nisl. </p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-			</div>
-		</div>
-	</section>
-
-	<section class="doctors">
-		<div class="container">
-			<h1 class="doctors--h1">Наші лікарі</h1>
-			<div class="row ">
-				<div class="doctors__sl">
-					<div class="doctors__sl--slide col-12 col-md-4">
-						<div class="doctors__sl--block">
-							<div class="doctors__sl--bg"></div>
-							<img src="images/doctor-slider.png" alt="Картинка слайда №1" class="sl__img">
-							<div class="doctors__sl--text">
-								<a href="#">
-									<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
-									<p class="doctors__sl--desc">Лікар рентгенолог</p>
-								</a>
-							</div>
-						</div>
-					</div>
-					<div class="doctors__sl--slide col-12 col-md-4">
-						<div class="doctors__sl--block">
-							<img src="images/doctor-slider.png" alt="Картинка слайда №2" class="sl__img">
-							<div class="doctors__sl--text">
-								<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
-								<p class="doctors__sl--desc">Лікар рентгенолог</p>
-							</div>
-						</div>
-					</div>
-					<div class="doctors__sl--slide col-12 col-md-4">
-						<div class="doctors__sl--block">
-							<img src="images/doctor-slider.png" alt="Картинка слайда №3" class="sl__img">
-							<div class="doctors__sl--text">
-								<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
-								<p class="doctors__sl--desc">Лікар рентгенолог</p>
-							</div>
-						</div>
-					</div>
-					<div class="doctors__sl--slide col-12 col-md-4">
-						<div class="doctors__sl--block">
-							<img src="images/doctor-slider.png" alt="Картинка слайда №4" class="sl__img">
-							<div class="doctors__sl--text">
-								<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
-								<p class="doctors__sl--desc">Лікар рентгенолог</p>
-							</div>
-						</div>
-					</div>
-					<div class="doctors__sl--slide col-12 col-md-4">
-						<div class="doctors__sl--block">
-							<img src="images/doctor-slider.png" alt="Картинка слайда №5" class="sl__img">
-							<div class="doctors__sl--text">
-								<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
-								<p class="doctors__sl--desc">Лікар рентгенолог</p>
-							</div>
-						</div>
-					</div>
-					<div class="doctors__sl--slide col-12 col-md-4">
-						<div class="doctors__sl--block">
-							<img src="images/doctor-slider.png" alt="Картинка слайда №6" class="sl__img">
-							<div class="doctors__sl--text">
-								<a href="#">
-									<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
-									<p class="doctors__sl--desc">Лікар рентгенолог</p>
-								</a>
-							</div>
-						</div>
 					</div>
 				</div>
 			</div>	
+		</section>
+
+		<section class="kind">
+			<div class="container">
+				<div class="row">
+					<div class=" col-12 col-lg-4">
+						<a class="kind--a" href="#">
+							<div class="kind__block">
+								<img class="kind__block--img" src="images/kt-png.png" alt="Logo">
+								<div class="kind__text">
+									<p class="kind__text--caption">KT</p>
+									<p class="kind__text--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut id commodo sollicitudin tristique. Faucibus sed at lacus sed. Aliquam purus nunc hendrerit sit nisl. </p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class=" col-12 col-lg-4">
+						<a class="kind--a" href="#">
+							<div class="kind__block">
+								<img class="kind__block--img" src="images/mpt-png.png" alt="Logo">
+								<div class="kind__text">
+									<p class="kind__text--caption">MPT</p>
+									<p class="kind__text--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut id commodo sollicitudin tristique. Faucibus sed at lacus sed. Aliquam purus nunc hendrerit sit nisl. </p>
+								</div>
+							</div>
+						</a>
+					</div>
+					<div class=" col-12 col-lg-4">
+						<a class="kind--a" href="#">
+							<div class="kind__block">
+								<img class="kind__block--img" src="images/fluer-png.png" alt="Logo">
+								<div class="kind__text">
+									<p class="kind__text--caption">Флюрографія</p>
+									<p class="kind__text--content">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus ut id commodo sollicitudin tristique. Faucibus sed at lacus sed. Aliquam purus nunc hendrerit sit nisl. </p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="doctors">
+			<div class="container">
+				<h1 class="doctors--h1">Наші лікарі</h1>
+				<div class="row ">
+					<div class="doctors__sl">
+						<div class="doctors__sl--slide col-12 col-md-4">
+							<div class="doctors__sl--block">
+								<div class="doctors__sl--bg"></div>
+								<img src="images/doctor-slider.png" alt="Картинка слайда №1" class="sl__img">
+								<div class="doctors__sl--text">
+									<a href="#">
+										<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
+										<p class="doctors__sl--desc">Лікар рентгенолог</p>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="doctors__sl--slide col-12 col-md-4">
+							<div class="doctors__sl--block">
+								<img src="images/doctor-slider.png" alt="Картинка слайда №2" class="sl__img">
+								<div class="doctors__sl--text">
+									<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
+									<p class="doctors__sl--desc">Лікар рентгенолог</p>
+								</div>
+							</div>
+						</div>
+						<div class="doctors__sl--slide col-12 col-md-4">
+							<div class="doctors__sl--block">
+								<img src="images/doctor-slider.png" alt="Картинка слайда №3" class="sl__img">
+								<div class="doctors__sl--text">
+									<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
+									<p class="doctors__sl--desc">Лікар рентгенолог</p>
+								</div>
+							</div>
+						</div>
+						<div class="doctors__sl--slide col-12 col-md-4">
+							<div class="doctors__sl--block">
+								<img src="images/doctor-slider.png" alt="Картинка слайда №4" class="sl__img">
+								<div class="doctors__sl--text">
+									<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
+									<p class="doctors__sl--desc">Лікар рентгенолог</p>
+								</div>
+							</div>
+						</div>
+						<div class="doctors__sl--slide col-12 col-md-4">
+							<div class="doctors__sl--block">
+								<img src="images/doctor-slider.png" alt="Картинка слайда №5" class="sl__img">
+								<div class="doctors__sl--text">
+									<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
+									<p class="doctors__sl--desc">Лікар рентгенолог</p>
+								</div>
+							</div>
+						</div>
+						<div class="doctors__sl--slide col-12 col-md-4">
+							<div class="doctors__sl--block">
+								<img src="images/doctor-slider.png" alt="Картинка слайда №6" class="sl__img">
+								<div class="doctors__sl--text">
+									<a href="#">
+										<h3 class="doctors__sl--zag">Наталія Шевчук</h3>
+										<p class="doctors__sl--desc">Лікар рентгенолог</p>
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>	
+			</div>
+		</section>
+
+		<section class="news">
+			<div class="container">
+				<div class="news-head">
+					<h2 class="news-head__h">Новини</h2>
+					<a class="news-head__a" href="news.html">Всі новини</a>
+				</div>
+				<div class="row">
+					<div class="news-block col-12 col-lg-6">
+						<a class="news-block__a" href="news.html">
+							<div class="news-block__container">
+								<img class="news-block__img" src="images/news-img.png" alt="News">
+								<div class="news-block__info">
+									<p class="news-block__info--date">10.20.2020</p>
+									<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
+									<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+									<p class="news-block__info--a" href="#">Читати далі</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="news-block col-12 col-lg-6">
+						<a class="news-block__a" href="news.html">
+							<div class="news-block__container">
+								<img class="news-block__img" src="images/news-img.png" alt="News">
+								<div class="news-block__info">
+									<p class="news-block__info--date">10.20.2020</p>
+									<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
+									<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+									<p class="news-block__info--a" href="#">Читати далі</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+  
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header popup-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body popup-body">
+					<p class="popup--h">Вхід</p>
+					<form class="popup__form" action="index.html" name="f1">
+						<input type="tel" id="reg-tel" placeholder="+380" name="tel"
+						class="popup__form--tel" />
+						<input type="password" id="password" placeholder="Ваш пароль" name="password" class="popup__form--pas" />
+					</form>
+				</div>
+				<div class="modal-footer popup-footer">
+					<button type="button" class="btn btn-primary modal-btn">Увійти</button>
+				</div>
+				<div class="modal-reg">
+					<p class="modal-reg__p">Не зареєстрований?<a class="modal-reg__a" href="registration.html">  Реєстрація</a></p>
+				</div>
+			</div>
+			</div>
 		</div>
-	</section>
+	</main>
 
-	<footer>
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-head">
+				<div class="logo">
+					<a class="logo__a" href="index.html">
+						<img src="images/logo-header.png" alt="Logo">
+					</a>
+				</div>
 
+				<div class="button btn-log" data-toggle="modal" data-target="#exampleModal">
+					<a href="#" class="button--a">Увійти</a>
+				</div>
+			</div>
+			<div class="row footer-main">
+				<div class="footer-main__text col-12 col-lg-4">
+					<a class="footer-main__text--a" href="#">
+						<p>6928 Blossom Hill Rd undefined Surrey, Oregon 20441 United States</p>
+					</a>
+				</div>
+
+				<div class="footer-main__text col-12 col-lg-4">
+					<a class="footer-main__text--a" href="#">
+						<p>FAQ для медичних працівників <br> FAQ для пацієнтів</p>
+					</a>
+				</div>
+
+				<div class="footer-main__contact col-12 col-lg-4">
+					<ul class="icons-block">
+						<li class="icons-block--button">
+							<div class="icons-block--button--div">
+								<a href="#responsive">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#insta-svg"></use>
+									</svg>
+								</a>
+							</div>
+						</li>
+						<li class="icons-block--button">
+							<div class="icons-block--button--div">
+								<a href="#responsive">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#telegram-svg"></use>
+									</svg>
+								</a>
+							</div>
+						</li>
+						<li class="icons-block--button">
+							<div class="icons-block--button--div">
+								<a href="#responsive">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#facebook"></use>
+									</svg>
+								</a>
+							</div>
+						</li>
+						<li class="icons-block--button d-lg-none">
+							<div class="icons-block--button--div">
+								<a href="#responsive">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#phone-svg"></use>
+									</svg>		
+								</a>
+							</div>
+						</li>
+					</ul>
+					<div class="number d-none d-lg-inline-block">
+						<a class="number--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-bottom__p">All rights reserved 2020</p>
+			</div>
+		</div>
 	</footer>
 
 	<!-- Scripts -->
 	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/jquery.maskedinput.min.js"></script>
 	<script src="js/libs/slick/slick.min.js"></script>
 	<script src="js/libs/bootstrap.min.js"></script>
 	<script src="js/main.js"></script>
