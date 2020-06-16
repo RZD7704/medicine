@@ -91,20 +91,11 @@
                     <div class="registration-block col-10 offset-1">
                         <div class="registration-block__head">
                             <h1 class="registration-block__head--h">Зареєструватися</h1>
-                            <div class="modal-reg registration-block__head--log">
-                                <p class="modal-reg__p">Уже є аккаунт?<a class="modal-reg__a" href="registration.html"> Увійти</a></p>
-                            </div>
                         </div>
 
                         <div class="registration-block__main">
-                            <div id="tabs">
-                                <ul class="tabs offset-lg-2">
-                                    <li id="tab-1" class="active"><label for="tab1"><input class="tabs-input" id="tab1" name="tab" type="radio" value="forsale" checked="checked"/>Пацієнт</label></li>
-                                    <li id="tab-2" class="tabs-li"><label for="tab2"><input class="tabs-input" id="tab2" name="tab" type="radio" value="wanted" />Медичний центр</label></li>
-                                </ul>
-                                
-                                 <div class="tab_container">     
-                                    <div id="forsale" class="row tab_content patient-block">
+                              
+                                    <div class="row tab_content patient-block">
                                         <div class="patient-block__inputs col-12 offset-lg-2 col-lg-4">
 											<input type="name" id="reg-user" placeholder="ПІБ" name="name" class="patient-block__input" />
 											<input type="tel" id="reg-tel1" placeholder="+380" pattern="\+380-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required name="tel"
@@ -114,24 +105,24 @@
 
 										<div class="patient-block__dropdowns col-12 col-lg-4">
 											<div class="patient-block__dropdown">
-												<select class="nselect-1" name="district" data-title="Область">
+												<select class="nselect-1" name="type">
+													<option value="1">MPT</option>
+													<option value="2">KT</option>
+													<option value="3">Флюрографія</option>
+												</select>
+											</div>
+											<div class="patient-block__dropdown">
+												<select class="nselect-1" name="city" data-title="Тип программи">
 													<option value="1">Cat</option>
 													<option value="2">Dog</option>
 													<option value="3">Duck</option>
 												</select>
 											</div>
 											<div class="patient-block__dropdown">
-												<select class="nselect-1" name="city" data-title="Місто проживання">
-													<option value="1">Cat</option>
-													<option value="2">Dog</option>
-													<option value="3">Duck</option>
-												</select>
-											</div>
-											<div class="patient-block__dropdown">
-												<select class="nselect-1" name="street" data-title="Адреса проживання">
-													<option value="1">Cat</option>
-													<option value="2">Dog</option>
-													<option value="3">Duck</option>
+												<select class="nselect-1" name="street">
+													<option value="1">Протягом дня</option>
+													<option value="2">Протягом місяця</option>
+													<option value="3">Протягом року</option>
 												</select>
 											</div>
 										</div>
@@ -171,10 +162,8 @@
 												<li id="gender--tab-2" class="tabs-li"><label for="gender--tab2"><input class="tabs-input" id="gender--tab2" name="gender-tab" type="radio" />Чоловіча</label></li>
 											</ul>
 
-											<div class="patient-block__gender--checkbox">
-												<input class="custom-checkbox patient-block__gender--input" type="checkbox" id="color-8" name="color-8" value="indigo">
-												<label class="label label-check" for="color-8">Згодна (-ний) на обробку та використання персональних даних</label>
-											</div>
+                                            <input type="file" name="file" id="file" class="inputfile" />
+                                            <label for="file">Upload</label>	
 										</div>
 
 										<div class="button btn-log col-12 patient-block__btn" data-toggle="modal" data-target="#exampleModal">
@@ -184,51 +173,7 @@
 
 
                                     </div>
-									<div id="wanted" class="row tab_content med-block" style="display: none;">
-										<div class="patient-block__inputs col-12 offset-lg-2 col-lg-4">
-											<input type="name" id="reg-user" placeholder="Назва медичного центру" name="name" class="patient-block__input" />
-											<input type="tel" id="reg-tel1" placeholder="+380" pattern="\+380-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required name="tel"
-											class="patient-block__input" />
-											<input type="email" id="username" placeholder="Ваш e-mail" name="email" class="patient-block__input" />
-											<div class="patient-block__dropdown">
-												<select class="nselect-1" name="district" data-title="Область">
-													<option value="1">Cat</option>
-													<option value="2">Dog</option>
-													<option value="3">Duck</option>
-												</select>
-											</div>
-											<div class="patient-block__dropdown">
-												<select class="nselect-1" name="district" data-title="Місто">
-													<option value="1">Cat</option>
-													<option value="2">Dog</option>
-													<option value="3">Duck</option>
-												</select>
-											</div>
-											<input type="text" id="street-user" placeholder="Адреса" name="text" class="patient-block__input" />
 
-										</div>
-
-										<div class="patient-block__dropdowns col-12 col-lg-4">
-											<input type="name" id="reg-user" placeholder="ПІБ директора" name="name" class="patient-block__input" />
-											<input type="name" id="reg-user" placeholder="ПІБ адміністратора" name="name" class="patient-block__input" />
-											<input type="name" id="reg-user" placeholder="ЄДРПОУ або ІПН" name="name" class="patient-block__input" />
-											<div class="patient-block__dropdown">
-												<select class="nselect-1" name="district" data-title="Медична інф. с-ма">
-													<option value="1">Cat</option>
-													<option value="2">Dog</option>
-													<option value="3">Duck</option>
-												</select>
-											</div>
-											<input type="email" id="username" placeholder="Електронна адреса" name="email" class="patient-block__input" />
-											<input type="name" id="reg-user" placeholder="IBAN" name="name" class="patient-block__input" />
-										</div>
-
-										<div class="button col-12" data-toggle="modal" data-target="#exampleModal">
-											<a href="#" class="button--a med-block--btn">Зареєструватися</a>
-										</div>
-									</div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>

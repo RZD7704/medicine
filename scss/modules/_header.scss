@@ -3,6 +3,10 @@
 //     top: 0;
 // }
 
+.logo {
+    margin-top: 15px;
+}
+
 .header {
     height: 100px;
     width: 100%;
@@ -23,9 +27,15 @@
         justify-content: space-between;
         margin-top: 10px;
 
+        @media (max-width: 575px) {
+            flex-direction: column;  
+            text-align: center;  
+        }
+
         .icons-block {
             display: flex;
             justify-content: center;
+            margin: auto 0;
 
             &--button {
                 margin-right: 5px;            }
@@ -53,7 +63,7 @@
         .number {
             margin-top: 5px;
             text-align: center;
-
+            margin: auto;
 
             &--a {
                 text-decoration: none;

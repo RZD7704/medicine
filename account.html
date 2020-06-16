@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header id="header" class="header d-flex align-items-center account-header">
+		<div class="container">
+			<div class="row">
+				<div class="header__left col-12 col-lg-6 text-center text-lg-left">
+					<div class="logo">
+						<a class="logo__a" href="index.html">
+							<img src="images/logo-header.png" alt="Logo">
+						</a>
+					</div>
+				</div>
+				<div class="header__right col-12 col-lg-6">
+					<ul class="icons-block">
+							<li class="icons-block--button">
+								<div class="icons-block--button--div">
+									<a href="#responsive">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#insta-svg"></use>
+										</svg>
+									</a>
+								</div>
+							</li>
+							<li class="icons-block--button">
+								<div class="icons-block--button--div">
+									<a href="#responsive">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#telegram-svg"></use>
+										</svg>
+									</a>
+								</div>
+							</li>
+							<li class="icons-block--button">
+								<div class="icons-block--button--div">
+									<a href="#responsive">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#facebook"></use>
+										</svg>
+									</a>
+								</div>
+							</li>
+							<li class="icons-block--button d-lg-none">
+								<div class="icons-block--button--div">
+									<a href="#responsive">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#phone-svg"></use>
+										</svg>		
+									</a>
+								</div>
+							</li>
+
+					</ul>
+
+					<div class="number d-none d-lg-inline-block">
+						<a class="number--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+					</div>
+
+                    <div class="account-prof">
+                        <a class="account-prof--a" href="#">
+                            <div class="account-prof__block">
+                                <img class="account-prof__block--img" src="images/prof-img.png" alt="Profile">
+                            </div>
+                        </a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+
+        <section class="account-card">
+            <div class="container account-card__block">
+                <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                        <a class="nav-item nav-link active account-card__block--link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">Профіль</a>
+                        <a class="nav-item nav-link account-card__block--link" id="nav-treat-tab" data-toggle="tab" href="#nav-treat" role="tab" aria-controls="nav-treat" aria-selected="false">Мої звернення</a>
+                        <a class="nav-item nav-link account-card__block--link" id="nav-ask-tab" data-toggle="tab" href="#nav-ask" role="tab" aria-controls="nav-ask" aria-selected="false">Часті запитання</a>
+                        <a class="nav-item nav-link account-card__block--link" id="nav-balance-tab" data-toggle="tab" href="#nav-balance" role="tab" aria-controls="nav-balance" aria-selected="false">Баланс</a>
+                    </div>
+                </nav>
+                <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active tab-block" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                        <div class="row account-card__block--tab">
+                            <div class="patient-block__inputs col-12 offset-lg-2 col-lg-4">
+                                <input type="name" id="reg-user" placeholder="Назва медичного центру" name="name" class="patient-block__input account-card__block--fields" />
+                                <input type="tel" id="reg-tel1" placeholder="+380" pattern="\+380-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required name="tel"
+                                class="patient-block__input account-card__block--fields" />
+                                <input type="email" id="username" placeholder="Ваш e-mail" name="email" class="patient-block__input account-card__block--fields" />
+                                <div class="patient-block__dropdown account-card__block--dropdown">
+                                    <select class="nselect-1" name="district" data-title="Область">
+                                        <option value="1">Cat</option>
+                                        <option value="2">Dog</option>
+                                        <option value="3">Duck</option>
+                                    </select>
+                                </div>
+                                <div class="patient-block__dropdown account-card__block--dropdown">
+                                    <select class="nselect-1" name="district" data-title="Місто">
+                                        <option value="1">Cat</option>
+                                        <option value="2">Dog</option>
+                                        <option value="3">Duck</option>
+                                    </select>
+                                </div>
+                                <input type="text" id="street-user" placeholder="Адреса" name="text" class="patient-block__input account-card__block--fields" />
+
+                            </div>
+
+                            <div class="patient-block__dropdowns col-12 col-lg-4">
+                                <input type="name" id="reg-user" placeholder="ПІБ директора" name="name" class="patient-block__input account-card__block--fields" />
+                                <input type="name" id="reg-user" placeholder="ПІБ адміністратора" name="name" class="patient-block__input account-card__block--fields" />
+                                <input type="name" id="reg-user" placeholder="ЄДРПОУ або ІПН" name="name" class="patient-block__input account-card__block--fields" />
+                                <div class="patient-block__dropdown account-card__block--dropdown">
+                                    <select class="nselect-1" name="district" data-title="Медична інф. с-ма">
+                                        <option value="1">Cat</option>
+                                        <option value="2">Dog</option>
+                                        <option value="3">Duck</option>
+                                    </select>
+                                </div>
+                                <input type="email" id="username" placeholder="Електронна адреса" name="email" class="patient-block__input account-card__block--fields" />
+                                <input type="name" id="reg-user" placeholder="IBAN" name="name" class="patient-block__input account-card__block--fields" />
+                            </div>
+
+                            <div class="button col-12 tab-block--btn">
+								<a href="#" class="button--a">Оновити</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade tab-block" id="nav-treat" role="tabpanel" aria-labelledby="nav-treat-tab">
+						<table class="tab-block__table" border="1">
+							<tr class="tab-block__table--head">
+							 <th class="tab-block__table--head--th">Час</th>
+							 <th>Дата</th>
+							 <th>ПІБ пацієнта</th>
+							 <th>Тип діагностики</th>
+							 <th>Попередній діагноз</th>
+							 <th>Статус</th>
+							</tr>
+							<tr class="tab-block__table--body">
+								
+								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
+								
+							</tr>
+							<tr class="tab-block__table--body">
+								
+								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
+							
+							</tr>
+							<tr class="tab-block__table--body">
+								
+								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
+							
+							</tr>
+							<tr class="tab-block__table--body">
+								
+								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
+							
+							</tr>
+							<tr class="tab-block__table--body">
+								
+								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
+							
+							</tr>
+							<tr class="tab-block__table--body">
+								
+								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
+							
+							</tr>
+							<tr class="tab-block__table--body">
+								
+								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
+							
+							</tr>
+							<tr class="tab-block__table--body">
+								
+								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
+							
+							</tr>
+
+						</table>
+
+						<div class="button col-12 tab-block--btn">
+							<a href="#" class="button--a">Додати нове звернення</a>
+						</div>
+
+
+					</div>
+                    <div class="tab-pane fade tab-block" id="nav-ask" role="tabpanel" aria-labelledby="nav-ask-tab">
+                        <div class="row">
+                            <div class="accordion col-8 offset-2 account-card__faq--accordion" id="accordionExample">
+									<h1 class="faq--h account-card__faq--h">FAQ для медичних центрів</h1>
+			
+									<div class="card faq__card account-card__faq">
+										<div class="card-header faq__card--header" id="headingOne">
+										<h2 class="mb-0">
+											<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.    
+											</button>
+										</h2>
+										</div>
+										<div id="collapseOne" class="collapse show faq__card--collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
+										<div class="card-body faq__card--collapse--body account-card__faq--body">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										</div>
+										</div>
+									</div>
+			
+									<div class="card faq__card account-card__faq">
+									<div class="card-header faq__card--header" id="headingTwo">
+										<h2 class="mb-0">
+										<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+											Collapsible Group Item #2
+										</button>
+										</h2>
+									</div>
+									<div id="collapseTwo" class="collapse faq__card--collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+										<div class="card-body faq__card--collapse--body account-card__faq--body">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										</div>
+									</div>
+									</div>
+			
+									<div class="card faq__card account-card__faq">
+									<div class="card-header faq__card--header" id="headingThree">
+										<h2 class="mb-0">
+										<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+											Collapsible Group Item #3
+										</button>
+										</h2>
+									</div>
+									<div id="collapseThree" class="collapse faq__card--collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+										<div class="card-body faq__card--collapse--body account-card__faq--body">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										</div>
+									</div>
+									</div>
+			
+									<div class="card faq__card account-card__faq">
+										<div class="card-header faq__card--header" id="headingFour">
+										<h2 class="mb-0">
+											<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.    
+											</button>
+										</h2>
+										</div>
+										<div id="collapseFour" class="collapse faq__card--collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
+										<div class="card-body faq__card--collapse--body account-card__faq--body">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										</div>
+										</div>
+									</div>
+			
+									<div class="card faq__card account-card__faq">
+										<div class="card-header faq__card--header" id="headingFive">
+										<h2 class="mb-0">
+											<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.    
+											</button>
+										</h2>
+										</div>
+										<div id="collapseFive" class="collapse faq__card--collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
+										<div class="card-body faq__card--collapse--body account-card__faq--body">
+											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+										</div>
+										</div>
+									</div>
+			
+							</div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade tab-block" id="nav-balance" role="tabpanel" aria-labelledby="nav-balance-tab">4</div>
+
+                </div>
+            </div>
+		</section>
+		
+		<section class="news">
+			<div class="container account-news">
+				<div class="news-head">
+					<h2 class="news-head__h">Новини</h2>
+					<a class="news-head__a" href="news.html">Всі новини</a>
+				</div>
+				<div class="row">
+					<div class="news-block col-12 col-lg-6">
+						<a class="news-block__a" href="news.html">
+							<div class="news-block__container">
+								<img class="news-block__img" src="images/news-img.png" alt="News">
+								<div class="news-block__info">
+									<p class="news-block__info--date">10.20.2020</p>
+									<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
+									<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+									<p class="news-block__info--a" href="#">Читати далі</p>
+								</div>
+							</div>
+						</a>
+					</div>
+
+					<div class="news-block col-12 col-lg-6">
+						<a class="news-block__a" href="news.html">
+							<div class="news-block__container">
+								<img class="news-block__img" src="images/news-img.png" alt="News">
+								<div class="news-block__info">
+									<p class="news-block__info--date">10.20.2020</p>
+									<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
+									<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+									<p class="news-block__info--a" href="#">Читати далі</p>
+								</div>
+							</div>
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+  
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header popup-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body popup-body">
+					<p class="popup--h">Вхід</p>
+					<form class="popup__form" action="index.html" name="f1">
+						<input type="tel" id="reg-tel" placeholder="+380" name="tel"
+						class="popup__form--tel" />
+						<input type="password" id="password" placeholder="Ваш пароль" name="password" class="popup__form--pas" />
+					</form>
+				</div>
+				<div class="modal-footer popup-footer">
+					<button type="button" class="btn btn-primary modal-btn">Увійти</button>
+				</div>
+				<div class="modal-reg">
+					<p class="modal-reg__p">Не зареєстрований?<a class="modal-reg__a" href="registration.html">  Реєстрація</a></p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-head">
+				<div class="logo">
+					<a class="logo__a" href="index.html">
+						<img src="images/logo-header.png" alt="Logo">
+					</a>
+				</div>
+
+				<div class="button" data-toggle="modal" data-target="#exampleModal">
+					<a href="#" class="button--a">Вийти</a>
+				</div>
+			</div>
+			<div class="row footer-main">
+				<div class="footer-main__text col-12 col-lg-4">
+					<a class="footer-main__text--a" href="#">
+						<p>6928 Blossom Hill Rd undefined Surrey, Oregon 20441 United States</p>
+					</a>
+				</div>
+
+				<div class="footer-main__text col-12 col-lg-4">
+					<a class="footer-main__text--a" href="#">
+						<p>FAQ для медичних працівників <br> FAQ для пацієнтів</p>
+					</a>
+				</div>
+
+				<div class="footer-main__contact col-12 col-lg-4">
+					<ul class="icons-block">
+						<li class="icons-block--button">
+							<div class="icons-block--button--div">
+								<a href="#responsive">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#insta-svg"></use>
+									</svg>
+								</a>
+							</div>
+						</li>
+						<li class="icons-block--button">
+							<div class="icons-block--button--div">
+								<a href="#responsive">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#telegram-svg"></use>
+									</svg>
+								</a>
+							</div>
+						</li>
+						<li class="icons-block--button">
+							<div class="icons-block--button--div">
+								<a href="#responsive">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#facebook"></use>
+									</svg>
+								</a>
+							</div>
+						</li>
+						<li class="icons-block--button d-lg-none">
+							<div class="icons-block--button--div">
+								<a href="#responsive">
+									<svg class="icon">
+										<use xlink:href="images/sprite.svg#phone-svg"></use>
+									</svg>		
+								</a>
+							</div>
+						</li>
+					</ul>
+					<div class="number d-none d-lg-inline-block">
+						<a class="number--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-bottom__p">All rights reserved 2020</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/jquery.maskedinput.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+	<script src="js/libs/jquery.nselect.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

@@ -1,17 +1,167 @@
+.tabs-input {
+    margin-right: 5px;
+}
+
+.tabs-li {
+    margin-top: 10px;
+}
+
 .registration {
     margin-top: 130px;
+
+    @media (max-width: 991px) {
+        margin-top: 160px;
+    }
 }
 
 .registration-block {
-    background: red;
+    // background: red;
 
     &__head {
         text-align: center;
 
         &--h {
-            font-size: 46px;
+            font-size: 25px;
             line-height: 55px;
             color: #2EAFFF;
         }
     }
+}
+
+.nselect.nsOrange .nselect__list LI._active SPAN {
+    color: #2EAFFF;
+}
+
+.nselect.nsOrange .nselect__head:after {
+    top: 21px;
+    right: 16px;
+    border-color: #706A6A transparent transparent transparent;
+}
+
+.nselect.nsOrange._checked .nselect__head:after {
+    border-color: #706A6A transparent transparent transparent;
+}
+
+.patient-block {
+    display: flex;
+    margin-top: 30px;
+
+    &__btn {
+        text-align: center;
+    }
+
+    &__input {
+        width: 100%;
+        background: #DCE6F0;
+        border-radius: 33px;
+        padding: 10px 20px;
+        margin-bottom: 20px;
+        color: #706A6A;
+        height: 44px;
+    }
+
+    &__dropdown div {
+        width: 100%;
+        margin-bottom: -3px;
+    }
+
+    &__dropdown h6 {
+        width: 100%;
+        background: #DCE6F0!important;
+        color: #706A6A!important;
+        border-radius: 33px!important;
+        padding: 10px 20px!important;
+        margin-bottom: 20px!important;
+        color: #706A6A;
+        height: 44px!important;
+        font-size: 19px!important;
+        text-align: left;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__date {
+
+        &--dropdowns {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        &--dropdown h6 {
+            width: 100%;
+            background: #DCE6F0!important;
+            color: #706A6A!important;
+            border-radius: 33px!important;
+            padding: 10px 20px!important;
+            margin-bottom: 20px!important;
+            color: #706A6A;
+            height: 44px!important;
+            font-size: 19px!important;
+        }
+
+        &--dropdown span {
+            margin-right: 15px!important;
+        }
+
+        &--a {
+            width: 100%;
+            background: #DCE6F0;
+            border-radius: 33px;
+            padding: 10px 20px;
+            margin-bottom: 20px;
+            color: #706A6A;
+            border: none;
+        } 
+
+        &--a:hover {
+            background: #DCE6F0;
+            color: #706A6A;
+        }
+
+        &--a:focus {
+            background: #DCE6F0!important;
+            color: #706A6A!important;
+            box-shadow: none!important;
+        }
+
+        &--menu {
+            width: 100%;
+        } 
+    }
+
+    &__gender {
+
+        &--checkbox {
+            display: flex;
+            margin-top: 30px;
+        }
+
+        &--input {
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+    } 
+
+    &__btn {
+        margin-top: 30px;
+
+        &--reg {
+            width: 25%;
+
+            @media (max-width: 991px) {
+                width: 55%;        
+            }
+        }
+    }
+}
+
+.med-block { 
+    margin-top: 50px;
+    text-align: center;
+
+
 }

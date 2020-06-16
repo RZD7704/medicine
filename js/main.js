@@ -2,6 +2,8 @@
 
 (function($){
 	$(document).ready(function() {
+		$('.nselect-1').nSelect();
+
 		$('input[name="tel"]').mask('+380 (99) 999-99-99');
 		$('input[name="tel"]').click(function(){
 			$(this).focus();

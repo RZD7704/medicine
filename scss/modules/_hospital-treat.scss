@@ -1,0 +1,30 @@
+
+    .inputfile {
+        width: 0.1px;
+        height: 0.1px;
+        opacity: 0;
+        overflow: hidden;
+        position: absolute;
+        z-index: -1;
+    }
+
+    .inputfile + label {
+        font-weight: 500;
+        font-size: 15px;
+        line-height: 20px;
+        letter-spacing: 0.01em;
+        color: #F5F5F5;
+        background: #000;
+        display: inline-block;
+        padding: 10px 55px;
+        border-radius: 5px;
+    }
+    
+    .inputfile:focus + label,
+    .inputfile + label:hover {
+        color: #DEBB00;
+    }
+
+    .inputfile + label {
+        cursor: pointer; /* "hand" cursor */
+    }
