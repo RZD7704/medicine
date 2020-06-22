@@ -1,0 +1,200 @@
+.persone {
+
+    &__head {
+        background: rgba(220, 230, 240, 0.42);
+        border-radius: 6px 6px 0px 0px;
+
+        &--p {
+            padding: 20px;
+            font-size: 25px;
+            line-height: 30px;
+            color: #706A6A;
+        }
+    }
+
+    &__a {
+        text-align: right;
+
+        &--href {
+            padding: 10px 0;
+            display: inline-block;
+            font-size: 20px;
+            line-height: 24px;
+            color: #2EAFFF;
+        }
+
+        &--href:hover {
+            text-decoration: underline;
+            color: #2EAFFF;
+        }
+    }
+
+    &__field {
+        flex-direction: column;
+    }
+
+    &__form {
+        margin-top: 40px;
+    }
+
+    &__file {
+        display: flex;
+        margin-top: 40px;
+
+        @media (max-width: 767px) {
+            flex-direction: column;
+            margin: auto;
+    
+        }
+
+        &--download {
+            position: relative;
+            width: 100%;
+            margin-right: 10px;
+            text-align: center;
+            &--img {
+                // position: absolute;
+            }
+
+            &--p {
+                position: absolute;
+                top: 0;
+                width: 100%;
+                // margin: auto 0;
+                margin-top: 65px;
+                // z-index: 999;
+            }
+        }
+    }
+
+    &__chat {
+        width: 100%;
+    }
+}
+
+
+.central-block {
+
+
+
+
+&__scandals--who {
+    display: flex;
+    justify-content: center;
+}
+
+&__scandals--cont{
+    background: #EAEAEA;
+    border-radius: 5px; 
+    padding: 10px 10px;
+    margin-top: 25px;
+    // display: flex;
+    // justify-content: flex-end;
+}
+
+&__scandals--img1 {
+    margin-right: 15px;
+    width: 46px;
+    height: 46px;
+    margin-top: 25px;
+}
+
+&__scandals--img2 {
+    margin-left: 15px;
+    width: 46px;
+    height: 46px;
+    margin-top: 25px;
+}
+
+&__scandals--name1 {
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 0.01em;
+    color: #363636;
+}
+
+&__scandals--name2 {
+    text-align: right;
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 0.01em;
+    color: #363636;
+    margin-right: 15px;
+}
+
+&__scandals--sub1 {
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 0.01em;
+    color: #828282;
+}
+
+&__scandals--sub2 {
+    font-size: 11px;
+    line-height: 12px;
+    letter-spacing: 0.01em;
+    color: #828282;
+    margin-left: 25px;
+}
+
+}
+
+//input
+.personefile + label {
+    margin-top: 50px;
+
+}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+
+.inputfile + label {
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    color: #2EAFFF;
+    background: #fff;
+    display: inline-block;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    color: #2EAFFF;
+    text-decoration: underline;
+}
+
+.inputfile + label {
+    cursor: pointer; /* "hand" cursor */
+}
+
+// textarea
+
+.message-block--m {
+    padding: 15px;
+    width: 100%;
+    min-height: 70px;
+    height: 70px;
+
+    background: #FFFFFF;
+    border: 2px solid #DCE6F0;
+    box-sizing: border-box;
+    border-radius: 18px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #706A6A;
+
+}
+.field-text {
+    resize: vertical;
+    max-height: 110px;
+}

@@ -10,29 +10,45 @@
 		});
 
 		//On Click Event
-			$("ul.tabs li").click(function() {
-				$("ul.tabs li").removeClass("active"); //Remove any "active" class
-				$(this).addClass("active");
-				$(".tab_content").hide(); //Hide all tab content
-				var activeTab = $(this).find("label input:radio").val(); //Find the href attribute value to identify the active tab + content
-				$('#' + activeTab).fadeIn(); //Fade in the active ID content
-			});
+		$("ul.tabs li").click(function() {
+			$("ul.tabs li").removeClass("active"); //Remove any "active" class
+			$(this).addClass("active");
+			$(".tab_content").hide(); //Hide all tab content
+			var activeTab = $(this).find("label input:radio").val(); //Find the href attribute value to identify the active tab + content
+			$('#' + activeTab).fadeIn(); //Fade in the active ID content
+		});
 
+
+		$('.list-card__btn').click(function() {
+			// if($('.list-card__btn svg').hasClass('active')){
+			// 	$('.list-card__btn svg').removeClass('active');
+			// }
+			if($(this).find("svg").hasClass('active')){
+				$(this).find("svg").removeClass("active");
+			} else if($('.list-card__btn svg').hasClass('active')) {
+				$('.list-card__btn svg').removeClass('active');
+			} else {
+				$(this).find("svg").addClass("active");
+
+			}
+				
+			// return false;
+		});
 
 		// Закрытие по клавише Esc.
-		$(document).keydown(function(e) {
-			if (e.keyCode === 27) {
-				e.stopPropagation();
-				$('#popup-fade').fadeOut();
-			}
-		});
+		// $(document).keydown(function(e) {
+		// 	if (e.keyCode === 27) {
+		// 		e.stopPropagation();
+		// 		$('#popup-fade').fadeOut();
+		// 	}
+		// });
 		
-		// Клик по фону, но не по окну.
-		$('#popup-fade').click(function(e) {
-			if ($(e.target).closest('.popup').length == 0) {
-				$(this).fadeOut();					
-			}
-		});
+		// // Клик по фону, но не по окну.
+		// $('#popup-fade').click(function(e) {
+		// 	if ($(e.target).closest('.popup').length == 0) {
+		// 		$(this).fadeOut();					
+		// 	}
+		// });
 
 		// Tabs
 		var active = $('.info-tabs__btn a.active').attr('data-icon');

@@ -21,7 +21,7 @@
 	<![endif]-->
 </head>
 <body>
-	<header id="header" class="header d-flex align-items-center">
+	<header id="header" class="header d-flex align-items-center account-header">
 		<div class="container">
 			<div class="row">
 				<div class="header__left col-12 col-lg-6 text-center text-lg-left">
@@ -76,100 +76,129 @@
 						<a class="number--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
 					</div>
 
-					<div class="button btn-log" data-toggle="modal" data-target="#exampleModal">
-						<a href="#" class="button--a">Увійти</a>
-					</div>
+                    <div class="account-prof">
+                        <a class="account-prof--a" href="#">
+                            <div class="account-prof__block">
+                                <img class="account-prof__block--img" src="images/prof-img.png" alt="Profile">
+                            </div>
+                        </a>
+                    </div>
 				</div>
 			</div>
 		</div>
 	</header>
 
 	<main class="main">
-		<section class="news-page">
-		 <div class="container">
-			<div class="news-head">
-				<h2 class="news-head__h">Новини</h2>
-			</div>
-			<div class="row">
-				<div class="news-block news-page__block col-12">
-					<a class="news-block__a" href="news-open.html">
-						<div class="news-block__container news-page__container">
-							<!-- <div class="row"> -->
-								<img class="news-block__img news-page__img" src="images/news-img.png" alt="News">
-								<div class="news-block__info news-page__info">
-									<p class="news-block__info--date">10.20.2020</p>
-									<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
-									<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut justo, tellus et urna. Nunc, faucibus tortor cursus tincidunt ac quis ridiculus enim. Vitae proin proin quam aenean aenean eu enim congue. Pellentesque faucibus tempus vulputate nec tellus pharetra.</p>
-									<p class="news-block__info--a" href="#">Читати далі</p>
+
+        <section class="account-card">
+            <div class="container account-card__block">
+				<h2 class="account-card__h2">Мій кабінет</h2>
+				<div class="row">
+					<div class="account-card__person col-lg-3">
+						<div class="account-card__person--container">
+							<img class="account-card__person--container--img img-fluid" src="images/doctor-profile.png" alt="Photo">
+						</div>
+
+						<div class="account-card__info">
+							<p class="account-card__info--name">Дяченко-Богун Артем Олександрович</p>
+							<div class="account-card__info--appeal">
+								<p class="account-card__info--appeal--p">Нові звернення:</p>
+								<p class="account-card__info--appeal--num">47</p>
+							</div>
+
+							<div class="account-card__info--balance">
+								<p class="account-card__info--balance--p">Баланс:</p>
+								<p class="account-card__info--balance--num">15000</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="account-card__list col-12 col-lg-9">
+                        <div class="row persone">
+                            <div class="persone__head col-12">
+								<p class="persone__head--p">Пацієнт Пацієнтський</p>
+							</div>
+							<div class="persone__a col-12">
+								<a class="persone__a--href" href="account.html">Повернутися до інших звернень</a>
+							</div>
+							<div class="profile__field col-12 col-md-8 persone__field">
+								<p class="profile__field--head">ПІБ</p>
+								<p class="profile__field--sub">Контантин Константинович Констянтиновський</p>
+							</div>
+							<div class="profile__field col-12 col-md-4 persone__field">
+								<p class="profile__field--head">Дата народження</p>
+								<p class="profile__field--sub">1 січня 1997</p>
+							</div>
+							<div class="profile__field col-12 col-md-4 persone__field">
+								<p class="profile__field--head">Вид діагностики</p>
+								<p class="profile__field--sub">МРТ</p>
+							</div>
+							<div class="profile__field col-12 col-md-4 persone__field">
+								<p class="profile__field--head">Вид діагностики</p>
+								<p class="profile__field--sub">Програма</p>
+							</div>
+							<div class="profile__field col-12 col-md-4 persone__field">
+								<p class="profile__field--head">Стать</p>
+								<p class="profile__field--sub">Чоловіча</p>
+							</div>
+							<div class="profile__field col-12 col-md-4 persone__field">
+								<p class="profile__field--head">Терміновість</p>
+								<p class="profile__field--sub">Протягом дня</p>
+							</div>
+							<div class="profile__field persone__field">
+								<input type="file" name="file" id="file" class="inputfile" />
+								<label for="file">Файл знімку</label>	
+							</div>
+							<div class="persone__text col-12">
+								<form action="#" class="persone__form">
+									<textarea name="message" cols="30" rows="10" placeholder="" class="field-text message-block--m">Здоровий, але не точно</textarea>
+								</form>
+							</div>
+
+							<div class="persone__file">
+								<div class="persone__file--download">
+									<img class="persone__file--download--img" src="images/fail-bg.png" alt="Logo">
+									<p class="persone__file--download--p">Файл з описом</p>
 								</div>
-							<!-- </div> -->
-						</div>
-					</a>
-				</div>
-
-				<div class="news-block news-page__block col-12">
-					<a class="news-block__a" href="news-open.html">
-						<div class="news-block__container news-page__container">
-							<img class="news-block__img news-page__img" src="images/news-img.png" alt="News">
-							<div class="news-block__info news-page__info">
-								<p class="news-block__info--date">10.20.2020</p>
-								<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
-								<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut justo, tellus et urna. Nunc, faucibus tortor cursus tincidunt ac quis ridiculus enim. Vitae proin proin quam aenean aenean eu enim congue. Pellentesque faucibus tempus vulputate nec tellus pharetra.</p>
-								<p class="news-block__info--a" href="#">Читати далі</p>
+								<div class="persone__file--download">
+									<input type="file" name="file" id="file" class="inputfile personefile" />
+									<label for="file">Додати сертифікати та дипломи</label>	
+								</div>
 							</div>
-						</div>
-					</a>
-				</div>
 
-				<div class="news-block news-page__block col-12">
-					<a class="news-block__a" href="news-open.html">
-						<div class="news-block__container news-page__container">
-							<img class="news-block__img news-page__img" src="images/news-img.png" alt="News">
-							<div class="news-block__info news-page__info">
-								<p class="news-block__info--date">10.20.2020</p>
-								<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
-								<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut justo, tellus et urna. Nunc, faucibus tortor cursus tincidunt ac quis ridiculus enim. Vitae proin proin quam aenean aenean eu enim congue. Pellentesque faucibus tempus vulputate nec tellus pharetra.</p>
-								<p class="news-block__info--a" href="#">Читати далі</p>
+							<div class="persone__chat">
+								<div class="central-block__scandals--who">
+									<img class="central-block__scandals--img1" src="images/chat-png.png" alt="Logo">
+									<div class="central-block__scandals--cont">
+										<p class="central-block__scandals--name1">Микола Тіщенко</p>
+										<p class="central-block__scandals--sub1">Добрий день, Ліля!  Я вам говорив, що ситуація під контролем. Навіщо провокуєте?</p>
+									</div>
+								</div>
+								<div class="central-block__scandals--who">
+									<div class="central-block__scandals--cont">
+										<p class="central-block__scandals--name2">Ліля Багірова</p>
+										<p class="central-block__scandals--sub2">Николай, что под контролем, Вы там вообще были, вот я там была и помогала людям!</p>
+									</div>
+									<img class="central-block__scandals--img2" src="images/chat-png.png" alt="Logo">
+								</div>
+								<form action="#" class="persone__form">
+									<textarea name="message" cols="30" rows="10" placeholder="" class="field-text message-block--m">Здоровий, але не точно</textarea>
+								</form>
+								<div class="persone__a col-12">
+									<a class="persone__a--href" href="#">Відправити</a>
+								</div>
+
 							</div>
-						</div>
-					</a>
+                        </div>
+
+					</div>
 				</div>
 
-				<div class="news-block news-page__block col-12">
-					<a class="news-block__a" href="news-open.html">
-						<div class="news-block__container news-page__container">
-							<img class="news-block__img news-page__img" src="images/news-img.png" alt="News">
-							<div class="news-block__info news-page__info">
-								<p class="news-block__info--date">10.20.2020</p>
-								<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
-								<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut justo, tellus et urna. Nunc, faucibus tortor cursus tincidunt ac quis ridiculus enim. Vitae proin proin quam aenean aenean eu enim congue. Pellentesque faucibus tempus vulputate nec tellus pharetra.</p>
-								<p class="news-block__info--a" href="#">Читати далі</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="news-block news-page__block col-12">
-					<a class="news-block__a" href="news-open.html">
-						<div class="news-block__container news-page__container">
-							<img class="news-block__img news-page__img" src="images/news-img.png" alt="News">
-							<div class="news-block__info news-page__info">
-								<p class="news-block__info--date">10.20.2020</p>
-								<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
-								<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur ut justo, tellus et urna. Nunc, faucibus tortor cursus tincidunt ac quis ridiculus enim. Vitae proin proin quam aenean aenean eu enim congue. Pellentesque faucibus tempus vulputate nec tellus pharetra.</p>
-								<p class="news-block__info--a" href="#">Читати далі</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="button news-page__btn">
-					<a href="#" class="button--a">Більше новин</a>
-				</div>
-			</div>
-		 </div>
+            </div>
 		</section>
+		
 
+  
 		<!-- Modal -->
 		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
 			<div class="modal-dialog">
@@ -207,8 +236,8 @@
 					</a>
 				</div>
 
-				<div class="button btn-log" data-toggle="modal" data-target="#exampleModal">
-					<a href="#" class="button--a">Увійти</a>
+				<div class="button" data-toggle="modal" data-target="#exampleModal">
+					<a href="#" class="button--a">Вийти</a>
 				</div>
 			</div>
 			<div class="row footer-main">

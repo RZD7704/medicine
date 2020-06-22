@@ -3,12 +3,16 @@
 //     top: 0;
 // }
 
-.logo {
-    margin-top: 15px;
+// .logo {
+//     margin-top: 27px;
+// }
+
+.logo img {
+    height: 35px;
 }
 
 .header {
-    height: 100px;
+    height: 50px;
     width: 100%;
     z-index: 999;
     background: #FFFFFF;
@@ -18,14 +22,19 @@
 
 
     @media (max-width: 991px) {
-        height: 150px;
+        height: 80px;
+
+    }
+
+    @media (max-width: 575px) {
+        height: 130px;
 
     }
 
     &__right {
         display: flex;
         justify-content: space-between;
-        margin-top: 10px;
+        // margin-top: 10px;
 
         @media (max-width: 575px) {
             flex-direction: column;  
@@ -38,11 +47,12 @@
             margin: auto 0;
 
             &--button {
-                margin-right: 5px;            }
+                margin-right: 5px;            
+                // margin: auto;
+            }
 
             &--button--div {
-                width: 35px;
-                height: 35px;
+
                 box-shadow: inset 0 0 0 2px rgba(112, 106, 106, 1);
                 text-align: center;
                 border-radius: 50%;
@@ -51,6 +61,12 @@
                 align-self: center;
                 margin: 4%;
                 transition: box-shadow 0.2s ease-in-out, color 0.2s ease-in-out;
+                display: inline-block;
+            }
+
+            &--button--div a {
+                width: 35px;
+                height: 35px;
                 display: inline-block;
             }
 
@@ -79,7 +95,13 @@
         }
 
         .button {
-            margin-top: 5px;
+            // margin-top: 5px;
+
+            // @media (min-width: 992px) {
+            //     margin: 20px auto;
+        
+            // }
+
             &--a {
                 text-decoration: none;
                 font-size: 20px;
@@ -90,13 +112,21 @@
                 padding: 5px 50px;
 
 
+                @media (min-width: 576px) {
+                    display: block;
+                    margin: auto;
+                }
+
             }
         }
     }
 }
 
 .button {
-    margin-top: 5px;
+    // margin-top: 5px;
+    @media (max-width: 575px) {
+        margin-top: 10px;
+    }
     &--a {
         text-decoration: none;
         font-size: 20px;

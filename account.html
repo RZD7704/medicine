@@ -92,205 +92,617 @@
 
         <section class="account-card">
             <div class="container account-card__block">
-                <nav>
-                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                        <a class="nav-item nav-link active account-card__block--link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">Профіль</a>
-                        <a class="nav-item nav-link account-card__block--link" id="nav-treat-tab" data-toggle="tab" href="#nav-treat" role="tab" aria-controls="nav-treat" aria-selected="false">Мої звернення</a>
-                        <a class="nav-item nav-link account-card__block--link" id="nav-ask-tab" data-toggle="tab" href="#nav-ask" role="tab" aria-controls="nav-ask" aria-selected="false">Часті запитання</a>
-                        <a class="nav-item nav-link account-card__block--link" id="nav-balance-tab" data-toggle="tab" href="#nav-balance" role="tab" aria-controls="nav-balance" aria-selected="false">Баланс</a>
-                    </div>
-                </nav>
-                <div class="tab-content" id="nav-tabContent">
-                    <div class="tab-pane fade show active tab-block" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
-                        <div class="row account-card__block--tab">
-                            <div class="patient-block__inputs col-12 offset-lg-2 col-lg-4">
-                                <input type="name" id="reg-user" placeholder="Назва медичного центру" name="name" class="patient-block__input account-card__block--fields" />
-                                <input type="tel" id="reg-tel1" placeholder="+380" pattern="\+380-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required name="tel"
-                                class="patient-block__input account-card__block--fields" />
-                                <input type="email" id="username" placeholder="Ваш e-mail" name="email" class="patient-block__input account-card__block--fields" />
-                                <div class="patient-block__dropdown account-card__block--dropdown">
-                                    <select class="nselect-1" name="district" data-title="Область">
-                                        <option value="1">Cat</option>
-                                        <option value="2">Dog</option>
-                                        <option value="3">Duck</option>
-                                    </select>
-                                </div>
-                                <div class="patient-block__dropdown account-card__block--dropdown">
-                                    <select class="nselect-1" name="district" data-title="Місто">
-                                        <option value="1">Cat</option>
-                                        <option value="2">Dog</option>
-                                        <option value="3">Duck</option>
-                                    </select>
-                                </div>
-                                <input type="text" id="street-user" placeholder="Адреса" name="text" class="patient-block__input account-card__block--fields" />
-
-                            </div>
-
-                            <div class="patient-block__dropdowns col-12 col-lg-4">
-                                <input type="name" id="reg-user" placeholder="ПІБ директора" name="name" class="patient-block__input account-card__block--fields" />
-                                <input type="name" id="reg-user" placeholder="ПІБ адміністратора" name="name" class="patient-block__input account-card__block--fields" />
-                                <input type="name" id="reg-user" placeholder="ЄДРПОУ або ІПН" name="name" class="patient-block__input account-card__block--fields" />
-                                <div class="patient-block__dropdown account-card__block--dropdown">
-                                    <select class="nselect-1" name="district" data-title="Медична інф. с-ма">
-                                        <option value="1">Cat</option>
-                                        <option value="2">Dog</option>
-                                        <option value="3">Duck</option>
-                                    </select>
-                                </div>
-                                <input type="email" id="username" placeholder="Електронна адреса" name="email" class="patient-block__input account-card__block--fields" />
-                                <input type="name" id="reg-user" placeholder="IBAN" name="name" class="patient-block__input account-card__block--fields" />
-                            </div>
-
-                            <div class="button col-12 tab-block--btn">
-								<a href="#" class="button--a">Оновити</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade tab-block" id="nav-treat" role="tabpanel" aria-labelledby="nav-treat-tab">
-						<table class="tab-block__table" border="1">
-							<tr class="tab-block__table--head">
-							 <th class="tab-block__table--head--th">Час</th>
-							 <th>Дата</th>
-							 <th>ПІБ пацієнта</th>
-							 <th>Тип діагностики</th>
-							 <th>Попередній діагноз</th>
-							 <th>Статус</th>
-							</tr>
-							<tr class="tab-block__table--body">
-								
-								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
-								
-							</tr>
-							<tr class="tab-block__table--body">
-								
-								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
-							
-							</tr>
-							<tr class="tab-block__table--body">
-								
-								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
-							
-							</tr>
-							<tr class="tab-block__table--body">
-								
-								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
-							
-							</tr>
-							<tr class="tab-block__table--body">
-								
-								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
-							
-							</tr>
-							<tr class="tab-block__table--body">
-								
-								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
-							
-							</tr>
-							<tr class="tab-block__table--body">
-								
-								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
-							
-							</tr>
-							<tr class="tab-block__table--body">
-								
-								<td class="tab-block__table--body--td">08:30</td><td>10.11.2020</td><td>Іванов Іван Іванович</td><td>МРТ</td><td>Подозрение на пневмонию</td><td>Описаний</td><td><a href="hospital-treat.html">Відкрити</a></td>
-							
-							</tr>
-
-						</table>
-
-						<div class="button col-12 tab-block--btn">
-							<a href="#" class="button--a">Додати нове звернення</a>
+				<h2 class="account-card__h2">Мій кабінет</h2>
+				<div class="row">
+					<div class="account-card__person col-lg-3">
+						<div class="account-card__person--container">
+							<img class="account-card__person--container--img img-fluid" src="images/doctor-profile.png" alt="Photo">
 						</div>
 
-
-					</div>
-                    <div class="tab-pane fade tab-block" id="nav-ask" role="tabpanel" aria-labelledby="nav-ask-tab">
-                        <div class="row">
-                            <div class="accordion col-8 offset-2 account-card__faq--accordion" id="accordionExample">
-									<h1 class="faq--h account-card__faq--h">FAQ для медичних центрів</h1>
-			
-									<div class="card faq__card account-card__faq">
-										<div class="card-header faq__card--header" id="headingOne">
-										<h2 class="mb-0">
-											<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.    
-											</button>
-										</h2>
-										</div>
-										<div id="collapseOne" class="collapse show faq__card--collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
-										<div class="card-body faq__card--collapse--body account-card__faq--body">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										</div>
-										</div>
-									</div>
-			
-									<div class="card faq__card account-card__faq">
-									<div class="card-header faq__card--header" id="headingTwo">
-										<h2 class="mb-0">
-										<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-											Collapsible Group Item #2
-										</button>
-										</h2>
-									</div>
-									<div id="collapseTwo" class="collapse faq__card--collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-										<div class="card-body faq__card--collapse--body account-card__faq--body">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										</div>
-									</div>
-									</div>
-			
-									<div class="card faq__card account-card__faq">
-									<div class="card-header faq__card--header" id="headingThree">
-										<h2 class="mb-0">
-										<button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-											Collapsible Group Item #3
-										</button>
-										</h2>
-									</div>
-									<div id="collapseThree" class="collapse faq__card--collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
-										<div class="card-body faq__card--collapse--body account-card__faq--body">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										</div>
-									</div>
-									</div>
-			
-									<div class="card faq__card account-card__faq">
-										<div class="card-header faq__card--header" id="headingFour">
-										<h2 class="mb-0">
-											<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.    
-											</button>
-										</h2>
-										</div>
-										<div id="collapseFour" class="collapse faq__card--collapse" aria-labelledby="headingFour" data-parent="#accordionExample">
-										<div class="card-body faq__card--collapse--body account-card__faq--body">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										</div>
-										</div>
-									</div>
-			
-									<div class="card faq__card account-card__faq">
-										<div class="card-header faq__card--header" id="headingFive">
-										<h2 class="mb-0">
-											<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.    
-											</button>
-										</h2>
-										</div>
-										<div id="collapseFive" class="collapse faq__card--collapse" aria-labelledby="headingFive" data-parent="#accordionExample">
-										<div class="card-body faq__card--collapse--body account-card__faq--body">
-											Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-										</div>
-										</div>
-									</div>
-			
+						<div class="account-card__info">
+							<p class="account-card__info--name">Дяченко-Богун Артем Олександрович</p>
+							<div class="account-card__info--appeal">
+								<p class="account-card__info--appeal--p">Нові звернення:</p>
+								<p class="account-card__info--appeal--num">47</p>
 							</div>
-                        </div>
-                    </div>
-                    <div class="tab-pane fade tab-block" id="nav-balance" role="tabpanel" aria-labelledby="nav-balance-tab">4</div>
 
-                </div>
+							<div class="account-card__info--balance">
+								<p class="account-card__info--balance--p">Баланс:</p>
+								<p class="account-card__info--balance--num">15000</p>
+							</div>
+						</div>
+					</div>
+
+					<div class="account-card__list col-12 col-lg-9">
+
+
+						<div class="accordion" id="accordion">
+							<div class="card list-card">
+								<div class="card-header list-card__header" id="headingOne">
+								  <h2 class="mb-0 list-card__header--block">
+										<button class="btn btn-link btn-block text-left list-card__btn" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+											<p>Мої звернення</p>
+
+											<svg data-icon="svg-arrow" class="icon list-card__svg active">
+												<use xlink:href="images/sprite.svg#arrow-cards"></use>
+											</svg>
+										</button>
+								  </h2>
+								</div>
+								<div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+								  <div class="card-body">
+									<div class="appeal">
+										<div class="filters">
+											<ul class="filters__ul">
+												<li id="filters-tab-1" class="active filters__ul--li"><label for="filters-tab1"><input class="filters__ul--input" id="filters-tab1" name="tab" type="radio" checked="checked"/>Пацієнт</label></li>
+												<li id="filters-tab-2" class="filters__ul--li"><label for="filters-tab2"><input class="filters__ul--input" id="filters-tab2" name="tab" type="radio"/>Медичний центр</label></li>
+												<li id="filters-tab-3" class="filters__ul--li"><label for="filters-tab3"><input class="filters__ul--input" id="filters-tab3" name="tab" type="radio"/>Фізичні особи</label></li>
+											</ul>
+										</div>
+
+										<table class="appeal__table" border="1">
+											<tr>
+												<th></th>
+												<th class="appeal__table--title">Час</th>
+												<th class="appeal__table--title">Дата</th>
+												<th class="appeal__table--title">Тип діагностики</th>
+												<th class="appeal__table--title">Попередній діагноз</th>
+												<th class="appeal__table--title">Статус</th>
+											</tr>
+											<tr>
+												<td>
+													<svg class="icon appeal__table--items--svg">
+														<use xlink:href="images/sprite.svg#hospital-svg"></use>
+													</svg>
+												</td>
+												<td class="appeal__table--items">08:30</td>
+												<td class="appeal__table--items">10.11.2020</td>
+												<td class="appeal__table--items">МРТ</td>
+												<td class="appeal__table--items">Подозрение на пневмонию</td>
+												<td class="appeal__table--items appeal__table--items--described">
+													<svg class="icon appeal__table--items--svg">
+														<use xlink:href="images/sprite.svg#not-described"></use>
+													</svg>
+												</td>
+												<td>
+													<a class="appeal__table--items--a" href="persone.html">Відкрити</a>
+												</td>
+											</tr>
+
+											<tr>
+												<td>
+													<svg class="icon appeal__table--items--svg">
+														<use xlink:href="images/sprite.svg#pacient-svg"></use>
+													</svg>
+												</td>
+												<td class="appeal__table--items">08:30</td>
+												<td class="appeal__table--items">10.11.2020</td>
+												<td class="appeal__table--items">МРТ</td>
+												<td class="appeal__table--items">Здоровий</td>
+												<td class="appeal__table--items appeal__table--items--described">
+													<svg class="icon appeal__table--items--svg">
+														<use xlink:href="images/sprite.svg#not-described"></use>
+													</svg>
+												</td>
+												<td>
+													<a class="appeal__table--items--a" href="persone.html">Відкрити</a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<svg class="icon appeal__table--items--svg">
+														<use xlink:href="images/sprite.svg#hospital-svg"></use>
+													</svg>
+												</td>
+												<td class="appeal__table--items">08:30</td>
+												<td class="appeal__table--items">10.11.2020</td>
+												<td class="appeal__table--items">МРТ</td>
+												<td class="appeal__table--items">Здоровий</td>
+												<td class="appeal__table--items appeal__table--items--described">
+													<svg class="icon appeal__table--items--svg">
+														<use xlink:href="images/sprite.svg#described"></use>
+													</svg>
+												</td>
+												<td>
+													<a class="appeal__table--items--a" href="persone.html">Відкрити</a>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<svg class="icon appeal__table--items--svg">
+														<use xlink:href="images/sprite.svg#hospital-svg"></use>
+													</svg>
+												</td>
+												<td class="appeal__table--items">08:30</td>
+												<td class="appeal__table--items">10.11.2020</td>
+												<td class="appeal__table--items">МРТ</td>
+												<td class="appeal__table--items">Здоровий</td>
+												<td class="appeal__table--items appeal__table--items--described">
+													<svg class="icon appeal__table--items--svg">
+														<use xlink:href="images/sprite.svg#described"></use>
+													</svg>
+												</td>
+												<td>
+													<a class="appeal__table--items--a" href="persone.html">Відкрити</a>
+												</td>
+											</tr>
+											<tr>
+												<td class="appeal__table--items--svg--td">
+													<svg class="icon appeal__table--items--svg">
+														<use xlink:href="images/sprite.svg#pacient-svg"></use>
+													</svg>
+												</td>
+												<td class="appeal__table--items">08:30</td>
+												<td class="appeal__table--items">10.11.2020</td>
+												<td class="appeal__table--items">МРТ</td>
+												<td class="appeal__table--items">Здоровий</td>
+												<td class="appeal__table--items appeal__table--items--described">
+													<svg class="icon appeal__table--items--svg">
+														<use xlink:href="images/sprite.svg#described"></use>
+													</svg>
+												</td>
+												<td>
+													<a class="appeal__table--items--a" href="persone.html">Відкрити</a>
+												</td>
+											</tr>
+
+										</table>
+									</div>
+
+									<div class="mob-appeal">
+										<div class="filters">
+											<ul class="mob-appeal__ul">
+												<li id="filters-mob-1" class="active mob-appeal__ul--li"><label for="filters-mob1"><input class="filters__ul--input" id="filters-mob1" name="tab" type="radio" checked="checked"/>Пацієнт</label></li>
+												<li id="filters-mob-2" class="mob-appeal__ul--li"><label for="filters-mob2"><input class="filters__ul--input" id="filters-mob2" name="tab" type="radio"/>Медичний центр</label></li>
+												<li id="filters-mob-3" class="mob-appeal__ul--li"><label for="filters-mob3"><input class="filters__ul--input" id="filters-mob3" name="tab" type="radio"/>Фізичні особи</label></li>
+											</ul>
+										</div>
+
+										<div class="row mob-block">
+											<div class="mob-block__svg col-2">
+												<svg class="icon appeal__table--items--svg mob-block__svg--item">
+													<use xlink:href="images/sprite.svg#hospital-svg"></use>
+												</svg>
+											</div>
+											<div class="mob-block__info col-10">
+												<div class="mob-block__info--row">
+													<div class="mob-block__info--time">
+														<p class="mob-block__info--head">Час</p>
+														<p class="mob-block__info--sub">08:30</p>
+													</div>
+													<div class="mob-block__info--date">
+														<p class="mob-block__info--head">Дата</p>
+														<p class="mob-block__info--sub">10.11.2020</p>
+													</div>
+												</div>
+
+												<div class="mob-block__info--container">
+													<p class="mob-block__info--head">Тип діагностики</p>
+													<p class="mob-block__info--sub">МРТ</p>
+												</div>
+												<div class="mob-block__info--container">
+													<p class="mob-block__info--head">Попередній діагноз</p>
+													<p class="mob-block__info--sub">Подозрение на пневмонию</p>
+												</div>
+												<div class="mob-block__info--row">
+													<p class="mob-block__info--head">Статус</p>
+													<svg class="icon appeal__table--items--svg mob-block__info--svg">
+														<use xlink:href="images/sprite.svg#not-described"></use>
+													</svg>
+												</div>
+												<a class="mob-block__info--a" href="#">Відкрити</a>
+
+
+											</div>
+										</div>
+										<div class="row mob-block">
+											<div class="mob-block__svg col-2">
+												<svg class="icon appeal__table--items--svg mob-block__svg--item">
+													<use xlink:href="images/sprite.svg#hospital-svg"></use>
+												</svg>
+											</div>
+											<div class="mob-block__info col-10">
+												<div class="mob-block__info--row">
+													<div class="mob-block__info--time">
+														<p class="mob-block__info--head">Час</p>
+														<p class="mob-block__info--sub">08:30</p>
+													</div>
+													<div class="mob-block__info--date">
+														<p class="mob-block__info--head">Дата</p>
+														<p class="mob-block__info--sub">10.11.2020</p>
+													</div>
+												</div>
+
+												<div class="mob-block__info--container">
+													<p class="mob-block__info--head">Тип діагностики</p>
+													<p class="mob-block__info--sub">МРТ</p>
+												</div>
+												<div class="mob-block__info--container">
+													<p class="mob-block__info--head">Попередній діагноз</p>
+													<p class="mob-block__info--sub">Подозрение на пневмонию</p>
+												</div>
+												<div class="mob-block__info--row">
+													<p class="mob-block__info--head">Статус</p>
+													<svg class="icon appeal__table--items--svg mob-block__info--svg">
+														<use xlink:href="images/sprite.svg#not-described"></use>
+													</svg>
+												</div>
+												<a class="mob-block__info--a" href="#">Відкрити</a>
+
+
+											</div>
+										</div>
+										<div class="row mob-block">
+											<div class="mob-block__svg col-2">
+												<svg class="icon appeal__table--items--svg mob-block__svg--item">
+													<use xlink:href="images/sprite.svg#hospital-svg"></use>
+												</svg>
+											</div>
+											<div class="mob-block__info col-10">
+												<div class="mob-block__info--row">
+													<div class="mob-block__info--time">
+														<p class="mob-block__info--head">Час</p>
+														<p class="mob-block__info--sub">08:30</p>
+													</div>
+													<div class="mob-block__info--date">
+														<p class="mob-block__info--head">Дата</p>
+														<p class="mob-block__info--sub">10.11.2020</p>
+													</div>
+												</div>
+
+												<div class="mob-block__info--container">
+													<p class="mob-block__info--head">Тип діагностики</p>
+													<p class="mob-block__info--sub">МРТ</p>
+												</div>
+												<div class="mob-block__info--container">
+													<p class="mob-block__info--head">Попередній діагноз</p>
+													<p class="mob-block__info--sub">Подозрение на пневмонию</p>
+												</div>
+												<div class="mob-block__info--row">
+													<p class="mob-block__info--head">Статус</p>
+													<svg class="icon appeal__table--items--svg mob-block__info--svg">
+														<use xlink:href="images/sprite.svg#not-described"></use>
+													</svg>
+												</div>
+												<a class="mob-block__info--a" href="#">Відкрити</a>
+
+
+											</div>
+										</div>
+									</div>
+								  </div>
+								</div>
+							</div>
+
+							<div class="card list-card">
+								<div class="card-header list-card__header" id="headingTwo">
+								  <h2 class="mb-0 list-card__header--block">
+									<button class="btn btn-link btn-block text-left collapsed list-card__btn" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+										<p>Мій профіль</p>
+
+										<svg data-icon="svg-arrow" class="icon list-card__svg">
+											<use xlink:href="images/sprite.svg#arrow-cards"></use>
+										</svg>
+									</button>
+								  </h2>
+								</div>
+								<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+								  <div class="card-body">
+									<div class="row">
+										<div class="profile col-12 col-lg-10">
+											<h2 class="profile--name">Контантин Константинович Констянтиновський</h2>
+											<div class="profile__field">
+												<p class="profile__field--head col-12 col-lg-5">Телефон</p>
+												<p class="profile__field--sub col-12 col-lg-5">+38 066 310 84 80</p>
+											</div>
+											<div class="profile__field">
+												<p class="profile__field--head col-12 col-lg-5">Стаж роботи</p>
+												<p class="profile__field--sub col-12 col-lg-5">8 років</p>
+											</div>
+											<div class="profile__field">
+												<p class="profile__field--head col-12 col-lg-5">Область роботи</p>
+												<p class="profile__field--sub col-12 col-lg-5">Флюренгентром</p>
+											</div>
+											<div class="profile__field">
+												<p class="profile__field--head col-12 col-lg-5">Місто роботи</p>
+												<p class="profile__field--sub col-12 col-lg-5">Клініка мій лікар</p>
+											</div>
+											<div class="profile__field">
+												<p class="profile__field--head col-12 col-lg-5">Місце постійної роботи</p>
+												<p class="profile__field--sub col-12 col-lg-5">Фріланс</p>
+											</div>
+											<div class="profile__field">
+												<p class="profile__field--head col-12 col-lg-5">Спеціалізація</p>
+												<p class="profile__field--sub col-12 col-lg-5">Лікар рентгенолог</p>
+											</div>
+											<div class="profile__field">
+												<p class="profile__field--head col-12 col-lg-5">Дата народження</p>
+												<p class="profile__field--sub col-12 col-lg-5">1 січень 1997</p>
+											</div>
+											<div class="profile__field">
+												<p class="profile__field--head col-12 col-lg-5">Стать</p>
+												<p class="profile__field--sub col-12 col-lg-5">Чоловіча</p>
+											</div>
+
+											<div class="profile__checkbox col-12 col-lg-6">
+												<div class="profile__checkbox--tab">
+													<input class="custom-checkbox profile__checkbox--input" type="checkbox" id="МРТ" name="МРТ" value="МРТ">
+													<label class="label label-check" for="МРТ">МРТ</label>
+												</div>
+												<div class="profile__checkbox--tab">
+													<input class="custom-checkbox profile__checkbox--input" type="checkbox" id="КТ" name="КТ" value="КТ">
+													<label class="label label-check" for="КТ">КТ</label>
+												</div>
+												<div class="profile__checkbox--tab">
+													<input class="custom-checkbox profile__checkbox--input" type="checkbox" id="flur" name="flur" value="flur">
+													<label class="label label-check" for="flur">Рентген</label>
+												</div>
+											</div>
+											<!-- <ul class="profile__gender">
+												<li id="gender--tab-1" class="profile__gender--tab"><label for="profile__gender--tab1"><input class="profile__gender--tab--input" id="profile__gender--tab1" name="profile__gender-tab" type="radio" checked="checked" />Жіноча</label></li>
+												<li id="gender--tab-2" class="profile__gender--tab"><label for="profile__gender--tab2"><input class="profile__gender--tab--input" id="profile__gender--tab2" name="profile__gender-tab" type="radio" />Чоловіча</label></li>
+											</ul> -->
+										</div>
+									</div>
+								  </div>
+								</div>
+							</div>
+
+							<div class="card list-card">
+								<div class="card-header list-card__header" id="headingThree">
+								  <h2 class="mb-0 list-card__header--block">
+									<button class="btn btn-link btn-block text-left collapsed list-card__btn" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+										<p>Мій баланс</p>
+
+										<svg data-icon="svg-arrow" class="icon list-card__svg">
+											<use xlink:href="images/sprite.svg#arrow-cards"></use>
+										</svg>
+									</button>
+								  </h2>
+								</div>
+								<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+									<div class="card-body">
+										<div class="appeal">
+											<div class="balance">
+												<ul class="balance__ul">
+													<li id="balance-tab-1" class="active balance__ul--li"><label for="balance-tab1"><input class="balance__ul--input" id="balance-tab1" name="tab-balance" type="radio" checked="checked"/>Всі оплати</label></li>
+													<li id="balance-tab-2" class="balance__ul--li"><label for="balance-tab2"><input class="balance__ul--input" id="balance-tab2" name="tab-balance" type="radio"/>За останній місяць</label></li>
+													<li id="balance-tab-3" class="balance__ul--li"><label for="balance-tab3"><input class="balance__ul--input" id="balance-tab3" name="tab-balance" type="radio"/>За минулі періоди</label></li>
+												</ul>
+											</div>
+		
+											<table class="appeal__table balance__table" border="1">
+												<tr>
+													<th class="appeal__table--title">Дата</th>
+													<th class="appeal__table--title">Пацієнт</th>
+													<th class="appeal__table--title">Сума</th>
+												</tr>
+												<tr>
+
+													<td class="appeal__table--items">10.11.2020</td>
+													<td class="appeal__table--items">Корольов Максим Вікторович</td>
+													<td class="appeal__table--items">250 грн</td>
+												</tr>
+		
+												<tr>
+													<td class="appeal__table--items">10.11.2020</td>
+													<td class="appeal__table--items">Корольов Максим Вікторович</td>
+													<td class="appeal__table--items">250 грн</td>
+												</tr>
+												<tr>
+													<td class="appeal__table--items">10.11.2020</td>
+													<td class="appeal__table--items">Корольов Максим Вікторович</td>
+													<td class="appeal__table--items">250 грн</td>
+												</tr>
+												<tr>
+													<td class="appeal__table--items">10.11.2020</td>
+													<td class="appeal__table--items">Корольов Максим Вікторович</td>
+													<td class="appeal__table--items">250 грн</td>
+												</tr>
+												<tr>
+													<td class="appeal__table--items">10.11.2020</td>
+													<td class="appeal__table--items">Корольов Максим Вікторович</td>
+													<td class="appeal__table--items">250 грн</td>
+												</tr>
+		
+											</table>
+										</div>
+
+										<div class="mob-appeal">
+											<div class="filters">
+												<ul class="mob-appeal__ul">
+													<li id="filters-bal-1" class="active mob-appeal__ul--li"><label for="filters-bal1"><input class="filters__ul--input" id="filters-bal1" name="tab-balance" type="radio" checked="checked"/>Всі оплати</label></li>
+													<li id="filters-bal-2" class="mob-appeal__ul--li"><label for="filters-bal2"><input class="filters__ul--input" id="filters-bal2" name="tab-balance" type="radio"/>За останній місяць</label></li>
+													<li id="filters-bal-3" class="mob-appeal__ul--li"><label for="filters-bal3"><input class="filters__ul--input" id="filters-bal3" name="tab-balance" type="radio"/>За минулі періоди</label></li>
+												</ul>
+											</div>
+	
+											<div class="row mob-block">
+												<div class="mob-block__info col-12">
+													<div class="mob-block__info--row">
+														<div class="mob-block__info--time">
+															<p class="mob-block__info--head">Час</p>
+															<p class="mob-block__info--sub">08:30</p>
+														</div>
+														<div class="mob-block__info--date">
+															<p class="mob-block__info--head">Дата</p>
+															<p class="mob-block__info--sub">10.11.2020</p>
+														</div>
+													</div>
+	
+													<div class="mob-block__info--container">
+														<p class="mob-block__info--head">Пацієнт</p>
+														<p class="mob-block__info--sub">Контантин Константинович Констянтиновський</p>
+													</div>
+													<div class="mob-block__info--container">
+														<p class="mob-block__info--head">Попередній діагноз</p>
+														<p class="mob-block__info--sub">Подозрение на пневмонию</p>
+													</div>
+													<div class="mob-block__info--container">
+														<p class="mob-block__info--head">Сума</p>
+														<p class="mob-block__info--sub">250 грн</p>
+													</div>
+												</div>
+											</div>
+											<div class="row mob-block">
+												<div class="mob-block__info col-12">
+													<div class="mob-block__info--row">
+														<div class="mob-block__info--time">
+															<p class="mob-block__info--head">Час</p>
+															<p class="mob-block__info--sub">08:30</p>
+														</div>
+														<div class="mob-block__info--date">
+															<p class="mob-block__info--head">Дата</p>
+															<p class="mob-block__info--sub">10.11.2020</p>
+														</div>
+													</div>
+	
+													<div class="mob-block__info--container">
+														<p class="mob-block__info--head">Пацієнт</p>
+														<p class="mob-block__info--sub">Контантин Константинович Констянтиновський</p>
+													</div>
+													<div class="mob-block__info--container">
+														<p class="mob-block__info--head">Попередній діагноз</p>
+														<p class="mob-block__info--sub">Подозрение на пневмонию</p>
+													</div>
+													<div class="mob-block__info--container">
+														<p class="mob-block__info--head">Сума</p>
+														<p class="mob-block__info--sub">250 грн</p>
+													</div>
+												</div>
+											</div>
+											<div class="row mob-block">
+												<div class="mob-block__info col-12">
+													<div class="mob-block__info--row">
+														<div class="mob-block__info--time">
+															<p class="mob-block__info--head">Час</p>
+															<p class="mob-block__info--sub">08:30</p>
+														</div>
+														<div class="mob-block__info--date">
+															<p class="mob-block__info--head">Дата</p>
+															<p class="mob-block__info--sub">10.11.2020</p>
+														</div>
+													</div>
+	
+													<div class="mob-block__info--container">
+														<p class="mob-block__info--head">Пацієнт</p>
+														<p class="mob-block__info--sub">Контантин Константинович Констянтиновський</p>
+													</div>
+													<div class="mob-block__info--container">
+														<p class="mob-block__info--head">Попередній діагноз</p>
+														<p class="mob-block__info--sub">Подозрение на пневмонию</p>
+													</div>
+													<div class="mob-block__info--container">
+														<p class="mob-block__info--head">Сума</p>
+														<p class="mob-block__info--sub">250 грн</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="card list-card">
+								<div class="card-header list-card__header" id="headingFour">
+								  <h2 class="mb-0 list-card__header--block">
+									<button class="btn btn-link btn-block text-left collapsed list-card__btn" type="button" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+										<p>Часті запитання</p>
+
+										<svg data-icon="svg-arrow" class="icon list-card__svg">
+											<use xlink:href="images/sprite.svg#arrow-cards"></use>
+										</svg>
+									</button>
+								  </h2>
+								</div>
+								<div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+								  <div class="card-body">
+									<div class="accordion" id="accordionExample">
+				
+										<div class="card faq__card">
+											<div class="card-header faq__card--header" id="askOne">
+												<h2 class="mb-0">
+													<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#One" aria-expanded="true" aria-controls="One">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit.    
+													</button>
+												</h2>
+											</div>
+											<div id="One" class="collapse show faq__card--collapse" aria-labelledby="askOne" data-parent="#accordionExample">
+												<div class="card-body faq__card--collapse--body">
+													Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+												</div>
+											</div>
+										</div>
+				
+										<div class="card faq__card">
+										  <div class="card-header faq__card--header" id="askTwo">
+											<h2 class="mb-0">
+											  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#Two" aria-expanded="false" aria-controls="Two">
+												Collapsible Group Item #2
+											  </button>
+											</h2>
+										  </div>
+										  <div id="Two" class="collapse faq__card--collapse" aria-labelledby="askTwo" data-parent="#accordionExample">
+											<div class="card-body faq__card--collapse--body">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											</div>
+										  </div>
+										</div>
+				
+										<div class="card faq__card">
+										  <div class="card-header faq__card--header" id="askThree">
+											<h2 class="mb-0">
+											  <button class="btn btn-link btn-block text-left collapsed" type="button" data-toggle="collapse" data-target="#Three" aria-expanded="false" aria-controls="Three">
+												Collapsible Group Item #3
+											  </button>
+											</h2>
+										  </div>
+										  <div id="Three" class="collapse faq__card--collapse" aria-labelledby="askThree" data-parent="#accordionExample">
+											<div class="card-body faq__card--collapse--body">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											</div>
+										  </div>
+										</div>
+				
+										<div class="card faq__card">
+											<div class="card-header faq__card--header" id="askFour">
+											<h2 class="mb-0">
+												<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#Four" aria-expanded="true" aria-controls="Four">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.    
+												</button>
+											</h2>
+											</div>
+											<div id="Four" class="collapse faq__card--collapse" aria-labelledby="askFour" data-parent="#accordionExample">
+											<div class="card-body faq__card--collapse--body">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											</div>
+											</div>
+										</div>
+				
+										<div class="card faq__card">
+											<div class="card-header faq__card--header" id="askFive">
+											<h2 class="mb-0">
+												<button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse" data-target="#Five" aria-expanded="true" aria-controls="Five">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.    
+												</button>
+											</h2>
+											</div>
+											<div id="Five" class="collapse faq__card--collapse" aria-labelledby="askFive" data-parent="#accordionExample">
+											<div class="card-body faq__card--collapse--body">
+												Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+											</div>
+											</div>
+										</div>
+				
+									</div>
+								  </div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+				</div>
+
             </div>
 		</section>
 		
