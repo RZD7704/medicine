@@ -43,49 +43,50 @@
     z-index: 10;
 }
 
-.slick {
-    &-arrow {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        font-size: 0;
-        line-height: 0;
-        width: 50px;
-        height: 50px;
-        z-index: -1;
-    }
+// .slick {
+//     &-arrow {
+//         position: absolute;
+//         top: 50%;
+//         transform: translateY(-50%);
+//         font-size: 0;
+//         line-height: 0;
+//         width: 80px;
+//         height: 80px;
+//         z-index: 1;
+//     }
 
-    &-prev {
-        left: 30px;
-    }
+//     &-prev {
+//         left: 30px;
+//     }
 
-    &-next {
-        right: 30px;
-    } 
+//     &-next {
+//         right: 30px;
+//     } 
 
-    &-dots li button {
-        color: #DCE6F0;
+//     // &-dots li button {
+//     //     color: #DCE6F0!important;
 
-    }
+//     // }
 
-    &-dots li.slick-active button:before {
-        color: #B32078;
-    }
+//     // &-dots li.slick-active button:before {
+//     //     color: #B32078!important;
+//     // }
 
-    &-dots li button:before {
-        color: #DCE6F0;
-    }
+//     // &-dots li button:before {
+//     //     color: #DCE6F0!important;
+//     // }
 
-    &-dots {
-        bottom: 5%;
-    }
+//     // &-dots {
+//     //     bottom: 5%;
+//     //     // z-index: -1;
+//     // }
 
-    &-dots li button:before { 
-        color: #DCE6F0;
-    }
+//     // &-dots li button:before { 
+//     //     color: #DCE6F0!important;
+//     // }
 
 
 
-}
+// }
 
 

@@ -69,7 +69,8 @@
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 7000,
-			dots: true
+			dotsClass: 'doctors__sl--dots',
+			dots: false
 		});
 
 		$('.doctors__sl').slick({
@@ -78,7 +79,8 @@
 			// autoplay: true,
 			// autoplaySpeed: 2000,
 			dots: true,
-			dotsClass: 'slick-dots slider__dots doctors__sl--dots',
+			dotsClass: 'doctors__sl--dots',
+			// appendDots: '[h]',
 			responsive: [
 				{
 				  breakpoint: 991,
@@ -94,6 +96,7 @@
 			slidesToScroll: 1,
 			autoplay: true,
 			autoplaySpeed: 7000,
+			dotsClass: 'doctors__sl--dots',
 			dots: true
 
 		});

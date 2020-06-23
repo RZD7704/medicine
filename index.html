@@ -24,14 +24,14 @@
 	<header id="header" class="header d-flex align-items-center">
 		<div class="container">
 			<div class="row">
-				<div class="header__left col-12 col-lg-6 text-center text-lg-left">
+				<div class="header__left col-4 col-md-6">
 					<div class="logo">
 						<a class="logo__a" href="index.html">
 							<img src="images/logo-header.png" alt="Logo">
 						</a>
 					</div>
 				</div>
-				<div class="header__right col-12 col-lg-6">
+				<div class="header__right col-8 col-md-6">
 					<ul class="icons-block">
 							<li class="icons-block--button">
 								<div class="icons-block--button--div">
@@ -79,6 +79,16 @@
 					<div class="button btn-log" data-toggle="modal" data-target="#exampleModal">
 						<a href="#" class="button--a">Увійти</a>
 					</div>
+
+					<div class="account-prof button__mob" data-toggle="modal" data-target="#exampleModal">
+                        <a class="account-prof--a" href="#">
+                            <div class="account-prof__block">
+								<svg class="icon account-prof__block--img button__mob--svg">
+									<use xlink:href="images/sprite.svg#log-svg"></use>
+								</svg>	
+                            </div>
+                        </a>
+                    </div>
 				</div>
 			</div>
 		</div>
@@ -284,36 +294,46 @@
 			<div class="container">
 				<div class="news-head">
 					<h2 class="news-head__h">Новини</h2>
-					<a class="news-head__a" href="news.html">Всі новини</a>
 				</div>
 				<div class="row">
 					<div class="news-block col-12 col-lg-6">
-						<a class="news-block__a" href="news.html">
 							<div class="news-block__container">
-								<img class="news-block__img" src="images/news-img.png" alt="News">
+								<a class="news-block__a" href="news.html">
+									<img class="news-block__img" src="images/news-img.png" alt="News">
+								</a>
 								<div class="news-block__info">
 									<p class="news-block__info--date">10.20.2020</p>
-									<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
+									<a class="news-block__a" href="news.html">
+										<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
+									</a>
 									<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
-									<p class="news-block__info--a" href="#">Читати далі</p>
+									<a class="news-block__a" href="news.html">
+										<p class="news-block__info--a" href="#">Читати далі</p>
+									</a>
 								</div>
 							</div>
-						</a>
 					</div>
 
 					<div class="news-block col-12 col-lg-6">
-						<a class="news-block__a" href="news.html">
-							<div class="news-block__container">
+						<div class="news-block__container">
+							<a class="news-block__a" href="news.html">
 								<img class="news-block__img" src="images/news-img.png" alt="News">
-								<div class="news-block__info">
-									<p class="news-block__info--date">10.20.2020</p>
+							</a>
+							<div class="news-block__info">
+								<p class="news-block__info--date">10.20.2020</p>
+								<a class="news-block__a" href="news.html">
 									<h3 class="news-block__info--h">Кому заборонено запроваджувати ...</h3>
-									<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+								</a>
+								<p class="news-block__info--p">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+								<a class="news-block__a" href="news.html">
 									<p class="news-block__info--a" href="#">Читати далі</p>
-								</div>
+								</a>
 							</div>
-						</a>
+						</div>
 					</div>
+				</div>
+				<div class="news-head news-foot">
+					<a class="news-head__a" href="news.html">Всі новини</a>
 				</div>
 			</div>
 		</section>
@@ -357,9 +377,6 @@
 					</a>
 				</div>
 
-				<div class="button btn-log" data-toggle="modal" data-target="#exampleModal">
-					<a href="#" class="button--a">Увійти</a>
-				</div>
 			</div>
 			<div class="row footer-main">
 				<div class="footer-main__text col-12 col-lg-4">
