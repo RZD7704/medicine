@@ -1,4 +1,7 @@
+
+
 .central-block {
+    margin-top: 80px;
 
     .notfound {
 
@@ -10,13 +13,14 @@
             // margin-top: 100px;
 
             &--p {
-                font-size: 200px;
+                font-size: 270px;
                 line-height: 20px;
                 display: block;
                 align-items: center;
                 text-align: center;
                 letter-spacing: 0.01em;
-                color: #F7D631;
+                color: #2EAFFF;
+                margin-top: 80px;
                 // padding-top: 50px;
 
                 @media (max-width: 750px) {
@@ -26,6 +30,11 @@
                 @media (max-width: 350px) {
                     font-size: 100px;
                 }
+            }
+
+            &--svg {
+                width: 200px;
+                height: 200px;
             }
 
             &--span {
@@ -61,18 +70,19 @@
             &--block {
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
 
                 &--text {
 
                 }
 
                 &--p {
-                    font-size: 15px;
-                    line-height: 20px;
+                    font-size: 30px;
+                    line-height: 36px;
+                    color: #706A6A;
                     align-items: center;
                     text-align: center;
                     letter-spacing: 0.01em;
-                    color: #363636;
                 }
 
                 &--arrow {
@@ -83,6 +93,11 @@
                 &--img {
 
                 }
+            }
+
+            &--batton {
+                text-align: center;
+                margin-top: 50px;
             }
         }
     }

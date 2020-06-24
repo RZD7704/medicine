@@ -70,7 +70,7 @@
 			autoplay: true,
 			autoplaySpeed: 7000,
 			dotsClass: 'doctors__sl--dots',
-			dots: false
+			dots: true
 		});
 
 		$('.doctors__sl').slick({

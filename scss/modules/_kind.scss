@@ -1,5 +1,11 @@
 .kind {
-    background: linear-gradient(109.84deg, #FFFFFF -16.03%, #DCE6F0 52.56%, rgba(46, 175, 255, 0.61) 131.93%);
+    background: #fff;
+
+    &__h2 {
+        font-size: 25px;
+        line-height: 43px;
+        color: #706A6A;
+    }
 
     &--a {
         text-decoration: none;
@@ -10,11 +16,11 @@
     }
 
     &__block {
-        margin-top: 75px;
+        margin-top: 50px;
         margin-bottom: 75px;
-        background: #FFFFFF;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-        padding: 15px;
+        background: #F9F9F9;
+        box-shadow: 0px 4px 4px rgba(232, 232, 232, 0.25);
+        // padding: 15px;
 
         @media (max-width: 991px) {
             font-size: 150px;
@@ -34,12 +40,14 @@
     }
 
     &__text {
+        padding: 15px;
+        // height: 115px;
 
         &--caption {
-            text-align: center;
+            text-align: left;
             font-size: 20px;
             line-height: 36px;
-            color: #2EAFFF;
+            color: #438DBA;
         }
 
         &--content {

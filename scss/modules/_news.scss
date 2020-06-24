@@ -13,7 +13,7 @@
         font-size: 20px;
         line-height: 24px;
         color: #FFFFFF;
-        background: linear-gradient(101.45deg, #2EAFFF 38.11%, #DCE6F0 157.54%);
+        background: #438DBA;
         border-radius: 33px;
         padding: 8px 50px;
     }
@@ -43,6 +43,7 @@
     }
 
     &__container {
+        background: red;
         display: flex;
         margin-top: 20px;
         @media (max-width: 767px) {
@@ -58,7 +59,7 @@
     
     &__info {
         text-align: left;
-        background: #DCE6F0;
+        background: #F9F9F9;
         padding-left: 10px;
 
         &--date {
@@ -89,6 +90,10 @@
             color: rgba(112,106,106,0.5);
             padding-top: 15px;
             padding-bottom: 15px;
+        }
+
+        &--a:hover {
+            text-decoration: underline;
         }
     }
 }

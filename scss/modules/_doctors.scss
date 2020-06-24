@@ -19,7 +19,7 @@
         left: 0;
 
         &--block {
-            background: #DCE6F0;
+            background: #F9F9F9;
         }
 
         &--dots {
@@ -78,8 +78,8 @@
         }
 
         &--text {
-            background: #DCE6F0;
-            height: 100px;
+            background: #F9F9F9;
+            height: 120px;
             text-align: center;
         }
 
@@ -93,6 +93,21 @@
             font-size: 20px;
             line-height: 28px;
             color: #706A6A;
+        }
+
+        &--svg {
+            background: #438DBA;
+            width: 50px;
+            height: 50px;
+            position: relative;
+        }
+
+        &--arrow {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50px;
+            height: 50px;
         }
 
     }
