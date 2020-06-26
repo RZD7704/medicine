@@ -58,7 +58,6 @@
     &__info {
         // text-align: left;
         background: #F9F9F9;
-        padding-left: 10px;
         padding-right: 10px;
 
         &--date {
@@ -69,17 +68,17 @@
         }
 
         &--h {
-            font-size: 24px;
+            font-size: 17px;
             line-height: 17px;
             color: #2C2C2C;
             margin-top: 15px;
         }
 
         &--p {
-            font-size: 16px;
-            line-height: 22px;
+            font-size: 14px;
+            line-height: 17px;
             color: #706A6A;
-            margin-top: 15px;
+            margin-top: 10px;
         }
 
         &--a {
