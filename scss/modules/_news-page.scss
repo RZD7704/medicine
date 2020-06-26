@@ -1,12 +1,12 @@
 .news-page {
-    margin-top: 160px;
+    margin-top: 90px;
 
     &__block:nth-child(odd) .news-page__info {
-        background: #DCE6F0;
+        background: #f9f9f9;
     }
 
     &__block:nth-child(even) .news-page__info {
-        background: #fff;
+        background: #f9f9f9;
         margin-top: 0;
     }
 
@@ -25,9 +25,12 @@
         width: 100%;
         text-align: left;
         padding-left: 25px;
+        padding-right: 25px;
     }
 
     &__btn {
-        margin: 45px auto 0;
+        margin: 45px auto 20px auto;
+        text-align: center;
     }
 }
+

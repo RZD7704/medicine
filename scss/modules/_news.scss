@@ -30,8 +30,6 @@
     margin-top: 30px;
 } 
 
-
-
 .news-block {
 
     &__a {
@@ -43,7 +41,7 @@
     }
 
     &__container {
-        background: red;
+        background: #f9f9f9;
         display: flex;
         margin-top: 20px;
         @media (max-width: 767px) {
@@ -58,42 +56,68 @@
     }
     
     &__info {
-        text-align: left;
+        // text-align: left;
         background: #F9F9F9;
         padding-left: 10px;
 
         &--date {
-            font-size: 15px;
-            line-height: 14px;
-            color: rgba(112, 106, 106, 0.5);
+            font-size: 14px;
+            line-height: 17px;
+            color: #706A6A;
             margin-top: 30px;
         }
 
         &--h {
-            font-size: 20px;
-            line-height: 36px;
-            color: #2EAFFF;
+            font-size: 17px;
+            line-height: 17px;
+            color: #2C2C2C;
             margin-top: 15px;
         }
 
         &--p {
-            font-size: 17px;
-            line-height: 24px;
+            font-size: 14px;
+            line-height: 17px;
             color: #706A6A;
             margin-top: 10px;
         }
 
         &--a {
-            font-size: 17px;
-            line-height: 24px;
-            // text-decoration-line: underline;
-            color: rgba(112,106,106,0.5);
-            padding-top: 15px;
-            padding-bottom: 15px;
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            background: #438DBA;
+            width: 130px;
+            text-align: center;
+            border-radius: 14px;
+            margin-top: 25px;
+            margin-bottom: 20px;
         }
 
         &--a:hover {
-            text-decoration: underline;
+            text-decoration: none;
         }
     }
+}
+
+.news-block__image {
+    position: relative;
+    background-size: cover;
+    height: 100%;
+
+    @media (max-width: 991px) {
+        height: 300px;
+        background-position: center;
+
+    }
+}
+
+.news-block__image--a {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    height: 100%;
 }
