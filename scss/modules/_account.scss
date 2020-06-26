@@ -400,3 +400,40 @@
     margin-top: 40px;
 }
 
+.chart {
+    .chart-filters {
+        display: flex;
+        justify-content: flex-end;
+
+        &__btn {
+            margin-right: 15px;
+            margin-top: 30px;
+            &--a {
+                font-size: 20px;
+                line-height: 24px;
+                color: rgba(112, 106, 106, 0.5);
+                border: 1px solid rgba(112, 106, 106, 0.5);
+                box-sizing: border-box;
+                border-radius: 33px;
+                background: transparent;
+                padding: 5px 15px;
+            }
+
+            &--a:hover {
+                text-decoration: none;
+                color: #B32078;
+                border: 1px solid #B32078;
+            }
+
+            &--a.active {
+                color: #B32078;
+                border: 1px solid #B32078;
+            }
+        }
+
+        &__btn:last-child {
+            margin-right: 0;
+        }
+    }
+}
+

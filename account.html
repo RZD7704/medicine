@@ -14,6 +14,7 @@
 	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
 	<link rel="stylesheet" href="css/libs/jquery.nselect.css">
 	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/libs/Chart.min.css">
 	<link rel="stylesheet" href="css/styles.min.css">
 
 	<!--[if lt IE 9]>
@@ -114,8 +115,6 @@
 					</div>
 
 					<div class="account-card__list col-12 col-lg-9">
-
-
 						<div class="accordion" id="accordion">
 							<div class="card list-card">
 								<div class="card-header list-card__header" id="headingOne">
@@ -368,6 +367,23 @@
 
 
 											</div>
+										</div>
+									</div>
+
+									<div class="chart">
+										<div class="chart-filters">
+											<div class="chart-filters__btn">
+												<button href="news-open.html" class="chart-filters__btn--a">КТ</button>
+											</div>
+											<div class="chart-filters__btn">
+												<button href="news-open.html" class="chart-filters__btn--a active">МРТ</button>
+											</div>
+											<div class="chart-filters__btn">
+												<button href="news-open.html" class="chart-filters__btn--a">Рентгенограма</button>
+											</div>
+										</div>
+										<div class="chart-block">
+											<canvas id="appeals" width="400" height="400"></canvas>
 										</div>
 									</div>
 								  </div>
@@ -846,6 +862,7 @@
 	<script src="js/libs/slick/slick.min.js"></script>
 	<script src="js/libs/jquery.nselect.min.js"></script>
 	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/libs/Chart.min.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

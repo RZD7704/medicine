@@ -18,21 +18,6 @@
 			$('#' + activeTab).fadeIn(); //Fade in the active ID content
 		});
 
-		// Закрытие по клавише Esc.
-		// $(document).keydown(function(e) {
-		// 	if (e.keyCode === 27) {
-		// 		e.stopPropagation();
-		// 		$('#popup-fade').fadeOut();
-		// 	}
-		// });
-		
-		// // Клик по фону, но не по окну.
-		// $('#popup-fade').click(function(e) {
-		// 	if ($(e.target).closest('.popup').length == 0) {
-		// 		$(this).fadeOut();					
-		// 	}
-		// });
-
 		// Tabs
 		var active = $('.info-tabs__btn a.active').attr('data-icon');
 		$('#' + active).addClass('active');
@@ -85,3 +70,49 @@
 		});
 	});
 })(jQuery);
+
+
+var ctx = document.getElementById('appeals');
+  var myChart = new Chart(ctx, {
+    type: 'bar',
+    data: {
+      labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange', 'Green', 'Purple', 'Orange'],
+      datasets: [{
+        label: '# of Votes',
+        data: [50, 19, 3, 5, 2, 3, 6, 23, 6, 12, 53, 65, 4, 2, 4, 45, 4, 4, 4, 3, 43],
+        backgroundColor: '#ACFEF7',
+        borderColor: '#ACFEF7',
+        borderWidth: 1
+      },{
+        label: '# of Votes',
+        data: [50, 19, 3, 5, 2, 3, 6, 23, 6, 12, 53, 65, 4, 2, 4, 45, 4, 4, 4, 3, 43],
+        backgroundColor: '#D0B8EF',
+        borderColor: '#D0B8EF',
+        borderWidth: 1
+      },{
+        label: '# of Votes',
+        data: [50, 19, 3, 5, 2, 3, 6, 23, 6, 12, 53, 65, 4, 2, 4, 45, 4, 4, 4, 3, 43],
+        backgroundColor: '#EFD6B8',
+        borderColor: '#EFD6B8',
+        borderWidth: 1
+      }]
+    },
+    options: {
+      legend: {
+            display: false
+      },
+/*      tooltips: {
+        mode: 'index',
+        intersect: false
+      },*/
+      responsive: true,
+      scales: {
+        xAxes: [{
+          stacked: true,
+        }],
+        yAxes: [{
+          stacked: true
+        }]
+      }
+    }
+  });
