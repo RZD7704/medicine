@@ -5,31 +5,69 @@
 .news-page {
     margin-top: 90px;
 
+    &__block {
+        margin-top: 30px;
+    }
+
     &__block:nth-child(odd) .news-page__info {
-        background: #f9f9f9;
+        background: #fff;
     }
 
     &__block:nth-child(even) .news-page__info {
-        background: #f9f9f9;
+        background: #fff;
         margin-top: 0;
     }
 
     &__container {
         margin-top: 0;
+        background: #fff;
+
     }
 
-    &__img {
-
-        @media (min-width: 768px) {
-            max-width: 250px;
-        }
-    }
-
-    &__info  {
+    &__info {
         width: 100%;
         text-align: left;
         padding-left: 25px;
         padding-right: 25px;
+
+        &--date {
+            font-size: 18px;
+            line-height: 17px;
+            color: #706A6A;
+            margin-top: 25px;
+        }
+
+        &--h {
+            font-size: 25px;
+            line-height: 17px;
+            color: #2C2C2C;
+            margin-top: 25px;
+        }
+
+        &--p {
+            font-size: 18px;
+            line-height: 22px;
+            color: #706A6A;
+            margin-top: 15px;
+        }
+
+        &--a {
+            font-size: 14px;
+            line-height: 17px;
+            color: #FFFFFF;
+            padding-top: 7px;
+            padding-bottom: 7px;
+            background: #438DBA;
+            width: 130px;
+            text-align: center;
+            border-radius: 14px;
+            margin-top: 25px;
+            margin-bottom: 20px;
+        }
+
+        &--a:hover {
+            text-decoration: none;
+        }
     }
 
     &__btn {
@@ -43,17 +81,37 @@
             display: block;
             padding-top: 20px;
             padding-bottom: 20px;
-            font-size: 17px;
-            line-height: 17px;
-            color: #2C2C2C;
+            // font-size: 17px;
+            // line-height: 17px;
+            color: #706A6A;
             // margin-top: 15px;
+
+            font-size: 20px;
+            line-height: 24px;
         }
 
         &--a:hover {
             text-decoration: none;
-            color: #2C2C2C;
+            color: #438DBA;
+
 
         }
+    }
+
+    &__btn:hover {
+        background: #f9f9f9;
+        // border-top: 1px solid #fff;
+        // border-bottom: 1px solid rgba(255,255,255,0.5);
+        transition: all .3s;
+
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__more {
+        margin-top: 25px;
     }
 }
 

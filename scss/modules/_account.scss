@@ -145,8 +145,10 @@
 
 
     }
-
-    &__btn svg.active {
+    &__btn.collapsed svg{
+        transform: rotate(0);
+    }
+    &__btn svg {
         transform: rotate(180deg);
     }
 

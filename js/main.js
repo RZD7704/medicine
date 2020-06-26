@@ -18,22 +18,6 @@
 			$('#' + activeTab).fadeIn(); //Fade in the active ID content
 		});
 
-
-		$('.list-card__btn').click(function() {
-			// if($('.list-card__btn svg').hasClass('active')){
-			// 	$('.list-card__btn svg').removeClass('active');
-			// }
-			if($(this).find("svg").hasClass('active')){
-				$(this).find("svg").removeClass("active");
-			} else if($('.list-card__btn svg').hasClass('active')) {
-				$('.list-card__btn svg').removeClass('active');
-			} else {
-				$(this).find("svg").addClass("active");
-			}
-				
-			// return false;
-		});
-
 		// Закрытие по клавише Esc.
 		// $(document).keydown(function(e) {
 		// 	if (e.keyCode === 27) {
