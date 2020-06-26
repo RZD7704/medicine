@@ -1,3 +1,7 @@
+.footer-news {
+    margin-top: 0;
+}
+
 .news-page {
     margin-top: 90px;
 
@@ -29,8 +33,27 @@
     }
 
     &__btn {
-        margin: 45px auto 20px auto;
+        // margin: 45px auto 20px auto;
+        margin-top: 30px;
+        border-top: 1px solid rgba(112, 106, 106, 0.2);
+        // border-bottom: 1px solid #706A6A;
         text-align: center;
+
+        &--a {
+            display: block;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            font-size: 17px;
+            line-height: 17px;
+            color: #2C2C2C;
+            // margin-top: 15px;
+        }
+
+        &--a:hover {
+            text-decoration: none;
+            color: #2C2C2C;
+
+        }
     }
 }
 

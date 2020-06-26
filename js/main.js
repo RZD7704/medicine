@@ -29,7 +29,6 @@
 				$('.list-card__btn svg').removeClass('active');
 			} else {
 				$(this).find("svg").addClass("active");
-
 			}
 				
 			// return false;

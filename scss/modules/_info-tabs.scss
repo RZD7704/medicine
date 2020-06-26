@@ -14,7 +14,7 @@
             border-top: none!important;
             border-right: none!important;
             border-left: none!important;
-            border-bottom: 1px solid #F9F9F9!important;   
+            border-bottom: none!important;   
             font-size: 20px;
             line-height: 36px;
             color: #438DBA;     
@@ -47,6 +47,7 @@
     &__cards ul {
         background: #fff;
         border-radius: 22px;
+        border-bottom: none;
     }
 
     &__svg {
@@ -60,6 +61,10 @@
         &--icon.active {
             fill: #438DBA;
         }
+    }
+
+    &__svg:last-child {
+        text-align: right;
     }
 
 }
