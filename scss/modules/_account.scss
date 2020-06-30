@@ -1,18 +1,9 @@
 .account-header {
     height: 65px;
-
-    // @media (max-width: 991px) {
-    //     height: 95px;
-
-    // }
-
-    // @media (max-width: 575px) {
-    //     height: 65px;
-
-    // }
 }
 
-.account-prof {
+.account-prof { 
+    margin-left: 15px;
     @media (max-width: 991px) {
         // margin-top: 10px;
         display: flex;
@@ -30,9 +21,6 @@
         border-radius: 50%;
         width: 50px;
         height:50px;
-        // margin: 0 auto;
-
-        // height: 100px;
         position: relative;
 
         &--img {
