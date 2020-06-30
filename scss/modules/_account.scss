@@ -66,9 +66,6 @@
                 margin-right: 5%;
 
             }
-            &--img {
-
-            }
         }
     }
 
@@ -90,7 +87,7 @@
         }
 
         &--num {
-            color: #2EAFFF;
+            color: #438DBA;
         }
     }
       
@@ -103,13 +100,13 @@
         }
 
         &--num {
-            color: #2EAFFF;
+            color: #438DBA;
         }
     }
     }
 
     &__h2 {
-        color: #2EAFFF;
+        color: #438DBA;
         margin-bottom: 40px;
     }
 }
@@ -328,7 +325,7 @@
             &--a {
                 font-size: 16px;
                 line-height: 19px;
-                color: #2EAFFF; 
+                color: #438DBA; 
                 margin-top: 10px; 
                 display: inline-block;
             }
@@ -338,6 +335,10 @@
             }
         }
 
+    }
+
+    .filters__ul--input {
+        margin-right: 5px;
     }
 }
 
@@ -386,7 +387,7 @@
         display: flex;
 
         &--tab {
-            margin-right: 10px;
+            margin-right: 15px;
             margin-top: 10px;
         }
 

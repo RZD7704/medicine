@@ -10,12 +10,12 @@
 		});
 
 		//On Click Event
-		$("ul.tabs li").click(function() {
+		$("ul.tabs ").click(function() {
 			$("ul.tabs li").removeClass("active"); //Remove any "active" class
 			$(this).addClass("active");
 			$(".tab_content").hide(); //Hide all tab content
 			var activeTab = $(this).find("label input:radio").val(); //Find the href attribute value to identify the active tab + content
-			$('#' + activeTab).fadeIn(); //Fade in the active ID content
+			$('#' + activeTab).show(); //Fade in the active ID content
 		});
 
 		// Tabs

@@ -12,7 +12,7 @@
         font-size: 30px;
         line-height: 57px;
         letter-spacing: 0.1em;
-        color: #2EAFFF;
+        color: #438DBA;
     }
 
     &__form {
@@ -42,9 +42,22 @@
 
 .modal-btn {
     margin: auto;
-    background: linear-gradient(110.21deg, #2EAFFF 38.11%, #DCE6F0 157.54%);
+    background: #438DBA!important;
     border-radius: 33px;
     width: 60%;
+    border: none!important;
+    box-shadow: none!important;  
+}
+
+.modal-btn:hover {
+    background: #438DBA;
+    border: none!important;
+}
+
+.modal-btn:active {
+    background: #438DBA!important;
+    border: none!important;
+    box-shadow: none!important;
 }
 
 .modal-reg {
@@ -58,10 +71,12 @@
     &__a {
         font-size: 16px;
         line-height: 24px;
-        color: #2EAFFF;
+        color: #438DBA;
     }
 
     &__a:hover {
         text-decoration: none;
+        color: #438DBA;
+
     }
 }
