@@ -1,5 +1,5 @@
 .faq {
-    margin-top: 160px;
+    margin-top: 75px;
 
     &--h {
         font-size: 30px;
@@ -15,8 +15,9 @@
 
         &--header {
             border-radius: 33px!important;
-            background: #2EAFFF;
+            background: #438DBA;
             padding: 3px 10px;
+            margin-bottom: 0!important;
         }
 
         &--header button {
@@ -37,7 +38,7 @@
         &--header button:hover {
             // font-size: 30px!important;
             // line-height: 36px;
-            // color: #FFFFFF;
+            color: #dadada;
             text-decoration: none!important;
         }
 
@@ -46,7 +47,7 @@
 
             &--body {
                 border-radius: 33px;
-                background: #DCE6F0;
+                background: #f9f9f9;
             }
         }
     }

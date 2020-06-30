@@ -20,12 +20,12 @@
             display: inline-block;
             font-size: 20px;
             line-height: 24px;
-            color: #2EAFFF;
+            color: #438DBA;
         }
 
         &--href:hover {
-            text-decoration: underline;
-            color: #2EAFFF;
+            text-decoration: none;
+            color: #438DBA;
         }
     }
 
@@ -52,9 +52,6 @@
             width: 100%;
             margin-right: 10px;
             text-align: center;
-            &--img {
-                // position: absolute;
-            }
 
             &--p {
                 position: absolute;
@@ -62,7 +59,7 @@
                 width: 100%;
                 // margin: auto 0;
                 margin-top: 65px;
-                // z-index: 999;
+                // z-index: 99
             }
         }
     }
@@ -158,7 +155,7 @@
     font-size: 20px;
     line-height: 24px;
     letter-spacing: 0.01em;
-    color: #2EAFFF;
+    color: #438DBA;
     background: #fff;
     display: inline-block;
     padding: 10px 15px;
@@ -167,8 +164,8 @@
 
 .inputfile:focus + label,
 .inputfile + label:hover {
-    color: #2EAFFF;
-    text-decoration: underline;
+    color: #438DBA;
+    text-decoration: none;
 }
 
 .inputfile + label {
