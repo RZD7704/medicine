@@ -28,6 +28,10 @@
     }
 }
 
+.nselect__list {
+    overflow-y: scroll!important;
+}
+
 .nselect.nsOrange .nselect__list LI._active SPAN {
     color: #438DBA;
 }
@@ -164,4 +168,9 @@
     text-align: center;
 
 
+}
+
+.nselect__inner {
+    min-width: 190px;
+    width: 100%!important;
 }
