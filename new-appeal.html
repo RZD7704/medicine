@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="description" content="Starter">
+	<meta name="author" content="Admin">
+	<title>Starter</title>
+
+	<link rel="icon" href="images/favicon.png">
+
+	<link rel="stylesheet" href="js/libs/slick/slick.css">
+	<link rel="stylesheet" href="js/libs/slick/slick-theme.css">
+	<link rel="stylesheet" href="css/libs/jquery.nselect.css">
+	<link rel="stylesheet" href="css/libs/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.min.css">
+
+	<!--[if lt IE 9]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+</head>
+<body>
+	<header id="header" class="header d-flex align-items-center account-header">
+		<div class="container">
+			<div class="row">
+				<div class="header__left col-4 col-md-6">
+					<div class="logo">
+						<a class="logo__a" href="index.html">
+							<img src="images/logo-header.png" alt="Logo">
+						</a>
+					</div>
+				</div>
+				<div class="header__right col-8 col-md-6">
+					<ul class="icons-block">
+							<li class="icons-block--button">
+								<div class="icons-block--button--div">
+									<a href="#responsive">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#insta-svg"></use>
+										</svg>
+									</a>
+								</div>
+							</li>
+							<li class="icons-block--button">
+								<div class="icons-block--button--div">
+									<a href="#responsive">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#telegram-svg"></use>
+										</svg>
+									</a>
+								</div>
+							</li>
+							<li class="icons-block--button">
+								<div class="icons-block--button--div">
+									<a href="#responsive">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#facebook"></use>
+										</svg>
+									</a>
+								</div>
+							</li>
+							<li class="icons-block--button d-lg-none">
+								<div class="icons-block--button--div">
+									<a href="#responsive">
+										<svg class="icon">
+											<use xlink:href="images/sprite.svg#phone-svg"></use>
+										</svg>		
+									</a>
+								</div>
+							</li>
+
+					</ul>
+
+					<div class="number d-none d-lg-inline-block">
+						<a class="number--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+					</div>
+
+                    <div class="account-prof">
+                        <a class="account-prof--a" href="#">
+                            <div class="account-prof__block">
+                                <img class="account-prof__block--img" src="images/prof-img.png" alt="Profile">
+                            </div>
+                        </a>
+                    </div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+        <section class="new-appeal">
+            <div class="container">
+                <h1 class="new-appeal__h text-center mb-5">Нове звернення</h1>
+                <form action="#">
+                    <div class="row">
+                        <div class="patient-block__inputs col-12 offset-lg-2 col-lg-4">
+                            <input type="name" id="reg-user" placeholder="ПІБ" name="name" class="patient-block__input" />
+                            <input type="tel" id="reg-tel1" placeholder="+380" pattern="\+380-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" required name="tel"
+                            class="patient-block__input" />
+                            <input type="email" id="username" placeholder="Ваш e-mail" name="email" class="patient-block__input" />
+                        </div>
+        
+                        <div class="patient-block__dropdowns col-12 col-lg-4">
+                            <div class="patient-block__dropdown">
+                                <select class="nselect-1" name="district" data-title="Область">
+                                    <option value="1">Cat</option>
+                                    <option value="2">Dog</option>
+                                    <option value="3">Duck</option>
+                                </select>
+                            </div>
+                            <div class="patient-block__dropdown">
+                                <select class="nselect-1" name="city" data-title="Місто проживання">
+                                    <option value="1">Cat</option>
+                                    <option value="2">Dog</option>
+                                    <option value="3">Duck</option>
+                                </select>
+                            </div>
+                            <div class="patient-block__dropdown">
+                                <select class="nselect-1" name="street" data-title="Адреса проживання">
+                                    <option value="1">Cat</option>
+                                    <option value="2">Dog</option>
+                                    <option value="3">Duck</option>
+                                </select>
+                            </div>
+                        </div>
+        
+                        <div class="patient-block__date col-12 col-lg-6 offset-lg-2">
+                            <h2 class="patient-block__date--h">Дата народження</h2>
+        
+                            <div class="patient-block__date--dropdowns">
+                                <div class="dropdown patient-block__date--dropdown">
+                                    <select class="nselect-1" name="date">
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                    </select>
+                                </div>
+                                <div class="dropdown patient-block__date--dropdown">
+                                    <select class="nselect-1" name="month">
+                                        <option value="1">січень</option>
+                                        <option value="2">Dog</option>
+                                        <option value="3">Duck</option>
+                                    </select>
+                                </div>
+                                <div class="dropdown patient-block__date--dropdown">
+                                    <select class="nselect-1" name="year">
+                                        <option value="1">1997</option>
+                                        <option value="2">1998</option>
+                                        <option value="3">1999</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="patient-block__gender col-12 col-lg-6 offset-lg-2">
+                            <h3 class="patient-block__gender--h">Стать</h3>
+                            <ul class="patient-block__gender--tabs">
+                                <li id="gender--tab-1" class="tabs-li"><label for="gender--tab1"><input class="tabs-input" id="gender--tab1" name="gender-tab" type="radio" checked="checked" />Жіноча</label></li>
+                                <li id="gender--tab-2" class="tabs-li"><label for="gender--tab2"><input class="tabs-input" id="gender--tab2" name="gender-tab" type="radio" />Чоловіча</label></li>
+                            </ul>
+        
+                            <div class="patient-block__gender--checkbox">
+                                <input class="custom-checkbox patient-block__gender--input" type="checkbox" id="color-8" name="color-8" value="indigo">
+                                <label class="label label-check" for="color-8">Згодна (-ний) на обробку та використання персональних даних</label>
+                            </div>
+                        </div>
+
+                        <div class="col-12 col-lg-6 offset-lg-2 profile__field persone__field">
+                            <input type="file" name="file" id="file" class="inputfile" />
+                            <label class="pl-0" for="file">Завантажити файл знімку</label>	
+                        </div>
+        
+                        <div class="button btn-log col-12 patient-block__btn" data-toggle="modal" data-target="#exampleModal">
+                            <a href="#" class="button--a patient-block__btn--a">Створити нове звернення</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        
+		<!-- Modal -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header popup-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+				</button>
+				</div>
+				<div class="modal-body popup-body">
+					<p class="popup--h">Вхід</p>
+					<form class="popup__form" action="index.html" name="f1">
+						<input type="tel" id="reg-tel" placeholder="+380" name="tel"
+						class="popup__form--tel" />
+						<input type="password" id="password" placeholder="Ваш пароль" name="password" class="popup__form--pas" />
+					</form>
+				</div>
+				<div class="modal-footer popup-footer">
+					<button type="button" class="btn btn-primary modal-btn">Увійти</button>
+				</div>
+				<div class="modal-reg">
+					<p class="modal-reg__p">Не зареєстрований?<a class="modal-reg__a" href="registration.html">  Реєстрація</a></p>
+				</div>
+			</div>
+			</div>
+		</div>
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer-head">
+				<div class="logo">
+					<a class="logo__a" href="index.html">
+						<img src="images/logo-header.png" alt="Logo">
+					</a>
+				</div>
+
+			</div>
+			<div class="row footer-main">
+				<div class="footer-main__text col-12 col-lg-4">
+					<a class="footer-main__text--a" href="#">
+						<p>6928 Blossom Hill Rd undefined Surrey, Oregon 20441 United States</p>
+					</a>
+				</div>
+
+				<div class="footer-main__text col-12 col-lg-4">
+					<a class="footer-main__text--a" href="#">
+						<p>FAQ для медичних працівників <br> FAQ для пацієнтів</p>
+					</a>
+				</div>
+
+				<div class="footer-main__contact col-12 col-lg-4">
+					<ul class="icons-block">
+						<li class="icons-block--button">
+							<a href="#responsive">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#insta-svg"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="icons-block--button">
+							<a href="#responsive">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#telegram-svg"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="icons-block--button">
+							<a href="#responsive">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#facebook"></use>
+								</svg>
+							</a>
+						</li>
+						<li class="icons-block--button d-lg-none">
+							<a href="#responsive">
+								<svg class="icon">
+									<use xlink:href="images/sprite.svg#phone-svg"></use>
+								</svg>		
+							</a>
+						</li>
+					</ul>
+					<div class="number d-none d-lg-inline-block">
+						<a class="number--a" href="tel:+30(225) 555-01-18">+30(225) 555-0118</a>
+					</div>
+				</div>
+
+
+			</div>
+			<div class="footer-bottom">
+				<p class="footer-bottom__p">All rights reserved 2020</p>
+			</div>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="js/libs/jquery-3.4.1.min.js"></script>
+	<script src="js/libs/jquery.maskedinput.min.js"></script>
+	<script src="js/libs/slick/slick.min.js"></script>
+	<script src="js/libs/jquery.nselect.min.js"></script>
+	<script src="js/libs/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
